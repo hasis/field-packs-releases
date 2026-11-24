@@ -14,6 +14,16 @@ hasis. This repository holds the released pack files only (no sources). Two rele
 
 GATE, FREEZE and TUNE follow CHERD's chord when CHERD is installed.
 
+| snowtrain | beignet |
+| --- | --- |
+| ![snowtrain's train](packs/snowtrain/pictures/train.png) | ![BEIGNET on the master](packs/beignet/pictures/page-powdered.png) |
+| ![a wagon's values](packs/snowtrain/pictures/values.png) | ![BEIGNET's presets](packs/beignet/pictures/page-presets.png) |
+
+| wagons | TUNE |
+| --- | --- |
+| ![GATE](packs/wagons/pictures/page-gate.png) | ![TUNE](packs/tune/pictures/page.png) |
+| ![TAPE](packs/wagons/pictures/page-tape.png) | ![JUNEAUX](packs/wagons/pictures/page-juneaux.png) |
+
 **Upgrading from fx 1.0:** TUNE's file is now `tune.pack` (it was `autotune.pack`). **Delete `autotune.pack`** from
 the unit when you copy `tune.pack`: with both there the loader keeps the earlier file by name, `autotune.pack`, and
 leaves `tune.pack` out. Sounds that use the effect `tune` keep it.
@@ -23,6 +33,10 @@ leaves `tune.pack` out. Sounds that use the effect `tune` keep it.
 [CHERD](packs/cherd/README.md) (`cherd.pack`, version 37): chords from one key, a sequencer in the synth's sequencer
 list, with flavors, strum, comp, arp and a FEEL page. **[The CHERD manual](packs/cherd/MANUAL.md)**; a one-page
 [quick start](docs/CHERD-quickstart.pdf). The chord font (Field Sans) is inside the pack: nothing else to copy.
+
+| | |
+| --- | --- |
+| ![CHERD's page](docs/screenshots/cherd-page.png) | ![CHERD's arp](docs/screenshots/cherd-arp.png) |
 
 ## Install
 
