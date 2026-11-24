@@ -1,0 +1,117 @@
+[
+  {
+    "id": "snowtrain",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "effects"
+    ],
+    "description": "A light fx train: TE's T3 effect plus three pack effects as wagons on every sound, trains on tape tracks, presets. Not beside fx train.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/snowtrain.pack",
+    "follow": "main",
+    "version": 17,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [
+      {
+        "name": "snowtrain",
+        "place": "snowtrain"
+      },
+      {
+        "name": "snow tracks",
+        "place": "snowtracks"
+      }
+    ],
+    "picture": {
+      "path": "packs/snowtrain/picture.png"
+    }
+  },
+  {
+    "id": "wagons",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "effects"
+    ],
+    "description": "Five effects in the unit's own effect lists: BOOST, GATE, FREEZE, TAPE and JUNEAUX.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/wagons.pack",
+    "follow": "main",
+    "version": 13,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [],
+    "picture": {
+      "path": "packs/wagons/picture.png"
+    }
+  },
+  {
+    "id": "beignet",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "effects",
+      "mixer"
+    ],
+    "description": "BEIGNET, a mastering sweetener for the master slot: glue, tone, width, loud and a -1 dBFS limiter; presets.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/beignet.pack",
+    "follow": "main",
+    "version": 2,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [
+      {
+        "name": "beignet",
+        "place": "beignet"
+      }
+    ],
+    "picture": {
+      "path": "packs/beignet/picture.png"
+    }
+  },
+  {
+    "id": "tune",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "effects"
+    ],
+    "description": "TUNE: pitch correction for the live input on its own page (shift + help), with harmonies, and a TUNE effect.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/tune.pack",
+    "follow": "main",
+    "version": 28,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [],
+    "picture": {
+      "path": "packs/tune/picture.png"
+    }
+  },
+  {
+    "id": "cherd",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "sequencing"
+    ],
+    "description": "CHERD: a chord sequencer in the synth's sequencer list. Keys play chords, with flavors, strum, comp, arp and a FEEL page.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/cherd.pack",
+    "follow": "main",
+    "version": 37,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [
+      {
+        "name": "cherd",
+        "place": "cherd"
+      }
+    ],
+    "picture": {
+      "path": "packs/cherd/picture.png"
+    }
+  }
+]

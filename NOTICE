@@ -1,0 +1,18 @@
+field-packs releases (fx, CHERD)
+Copyright (c) 2026 hasis. MIT licence: see LICENSE.
+
+Not affiliated with Teenage Engineering. "OP-1" and "OP-1 Field" are Teenage Engineering's names, used here only to
+say which instrument these packs run on. Nothing here is made, endorsed or supported by Teenage Engineering. No
+Teenage Engineering firmware, firmware bytes or unit files are in this repository or in its release files.
+
+Runs on: OP-1 Field, OS 1.7.3+0 only (not 1.7.3+1 or later), with open-field installed.
+
+open-field: the base pack, the loader, the pack format and the pack build tools are Faust's (LaP0573) open-field, MIT:
+  https://github.com/LaP0573/open-field
+These packs cannot run without it.
+
+Fonts: Field Sans (cherd's chord names, inside cherd.pack) is a Modified Version of Petaluma Script, Copyright (c) 2018
+Steinberg Media Technologies GmbH, with Reserved Font Name "Petaluma", under the SIL Open Font License 1.1 (OFL.txt).
+
+Other third-party parts built into the packs (OP-XY SDK headers, the xy-machines pitch-correction DSP, OP-XY Cherd's
+chord engine), all MIT, are listed in THIRD-PARTY.md.
