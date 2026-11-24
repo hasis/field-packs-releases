@@ -14,19 +14,22 @@ hasis. This repository holds the released pack files only (no sources). Two rele
 
 GATE, FREEZE and TUNE follow CHERD's chord when CHERD is installed.
 
-| snowtrain | beignet |
+| snowtrain | |
 | --- | --- |
-| ![snowtrain's train](packs/snowtrain/pictures/train.png) | ![BEIGNET on the master](packs/beignet/pictures/page-powdered.png) |
-| ![a wagon's values](packs/snowtrain/pictures/values.png) | ![BEIGNET's presets](packs/beignet/pictures/page-presets.png) |
+| ![the train](docs/screens/snowtrain-train.png) | ![a wagon's values](docs/screens/snowtrain-values.png) |
+| ![presets](docs/screens/snowtrain-presets.png) | |
 
-| wagons | TUNE |
+| beignet | TUNE |
 | --- | --- |
-| ![GATE](packs/wagons/pictures/page-gate.png) | ![TUNE](packs/tune/pictures/page.png) |
-| ![TAPE](packs/wagons/pictures/page-tape.png) | ![JUNEAUX](packs/wagons/pictures/page-juneaux.png) |
+| ![BEIGNET on the master](docs/screens/beignet.png) | ![TUNE](docs/screens/tune.png) |
+| ![BEIGNET's presets](docs/screens/beignet-presets.png) | |
 
-**Upgrading from fx 1.0:** TUNE's file is now `tune.pack` (it was `autotune.pack`). **Delete `autotune.pack`** from
-the unit when you copy `tune.pack`: with both there the loader keeps the earlier file by name, `autotune.pack`, and
-leaves `tune.pack` out. Sounds that use the effect `tune` keep it.
+| wagons | |
+| --- | --- |
+| ![GATE](docs/screens/gate.png) | ![TAPE](docs/screens/tape.png) |
+| ![JUNEAUX](docs/screens/juneaux.png) | |
+
+Screens captured on an OP-1 Field.
 
 ## CHERD 37: the chord sequencer
 
@@ -36,7 +39,7 @@ list, with flavors, strum, comp, arp and a FEEL page. **[The CHERD manual](packs
 
 | | |
 | --- | --- |
-| ![CHERD's page](docs/screenshots/cherd-page.png) | ![CHERD's arp](docs/screenshots/cherd-arp.png) |
+| ![CHERD](docs/screens/cherd.png) | ![CHERD, another flavor](docs/screens/cherd2.png) |
 
 ## Install
 
