@@ -41,6 +41,15 @@ list, with flavors, strum, comp, arp and a FEEL page. **[The CHERD manual](packs
 | --- | --- |
 | ![CHERD](docs/screens/cherd.png) | ![CHERD, another flavor](docs/screens/cherd2.png) |
 
+## Experimental: lanes 87 (pre-release)
+
+Waveforms and a vertical zoom on the Field's own tape screen: `waveform` on in settings > PACKS > LANES, then hold
+**HELP** and turn the **4th knob** for 8 / 4 / 2 / 1 lanes. Not in it: the PERFORM face and the 89MPH / CONSOLE looks
+(separate packs, later). Download it from the
+[lanes 87 pre-release](https://github.com/hasis/field-packs-releases/releases/tag/lanes-87-experimental), and please
+[open an issue](https://github.com/hasis/field-packs-releases/issues/new) with anything odd: what you did, a photo of
+the screen, your open-field version and other packs.
+
 ## Install
 
 1. **Requirements:** an OP-1 Field on **OS 1.7.3+0** (not 1.7.3+1) with open-field installed by Faust's install page
