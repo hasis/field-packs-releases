@@ -44,8 +44,8 @@ list, with flavors, strum, comp, arp and a FEEL page. **[The CHERD manual](packs
 ## Experimental: lanes 87 (pre-release)
 
 Waveforms and a vertical zoom on the Field's own tape screen: `waveform` on in settings > PACKS > LANES, then hold
-**HELP** and turn the **4th knob** for 8 / 4 / 2 / 1 lanes. Not in it: the PERFORM face and the 89MPH / CONSOLE looks
-(separate packs, later). Download it from the
+**HELP** and turn the **4th knob** for 8 / 4 / 2 / 1 lanes. Optional: `markers.pack` + `perform.pack` (attached too) add a
+plain PERFORM page (parts list, cues, countdown) on the 4th click. Not yet: punch-ins and the 89MPH / CONSOLE looks. Download it from the
 [lanes 87 pre-release](https://github.com/hasis/field-packs-releases/releases/tag/lanes-87-experimental), and please
 [open an issue](https://github.com/hasis/field-packs-releases/issues/new) with anything odd: what you did, a photo of
 the screen, your open-field version and other packs.
