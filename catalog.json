@@ -195,5 +195,201 @@
     "picture": {
       "path": "packs/boarder/picture.png"
     }
+  },
+  {
+    "id": "vu",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "looks",
+      "mixer"
+    ],
+    "description": "vu: audio visualizers on the mixer, of the master mix. Tap the mixer key for the next look; knobs turn TE's master EQ. Needs a look pack.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/vu.pack",
+    "follow": "main",
+    "version": 34,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [
+      {
+        "name": "vu",
+        "place": "vu"
+      }
+    ],
+    "picture": {
+      "path": "packs/vu/picture.png"
+    }
+  },
+  {
+    "id": "vu_spectrum",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "looks"
+    ],
+    "description": "Two looks for vu: SPECTRUM, an LED analyser with falling peaks, and SUNDOWN, a synthwave sunset whose mountains are the bands.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/vu_spectrum.pack",
+    "follow": "main",
+    "version": 5,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [],
+    "picture": {
+      "path": "packs/vu_spectrum/picture.png"
+    }
+  },
+  {
+    "id": "vu_classic",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "looks"
+    ],
+    "description": "A look for vu: CLASSIC, 64 thin bars with falling peak caps; the wave as dots or lines too on bases with option words.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/vu_classic.pack",
+    "follow": "main",
+    "version": 4,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [],
+    "picture": {
+      "path": "packs/vu_classic/picture.png"
+    }
+  },
+  {
+    "id": "vu_lcd",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "looks"
+    ],
+    "description": "A look for vu: LCD, a backlit dot-matrix panel with the tape, the BPM and 30 bars.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/vu_lcd.pack",
+    "follow": "main",
+    "version": 5,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [],
+    "picture": {
+      "path": "packs/vu_lcd/picture.png"
+    }
+  },
+  {
+    "id": "vu_console",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "looks"
+    ],
+    "description": "A look for vu: CONSOLE, an old film-and-TV audio console: pill bars, a sweep with blips, hex columns, readouts, lamps on beats.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/vu_console.pack",
+    "follow": "main",
+    "version": 4,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [],
+    "picture": {
+      "path": "packs/vu_console/picture.png"
+    }
+  },
+  {
+    "id": "vu_meter",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "looks"
+    ],
+    "description": "A look for vu: VU, a pair of needle meters in line art with PEAK lamps.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/vu_meter.pack",
+    "follow": "main",
+    "version": 4,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [],
+    "picture": {
+      "path": "packs/vu_meter/picture.png"
+    }
+  },
+  {
+    "id": "vu_bella",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "looks"
+    ],
+    "description": "A look for vu: BELLA, MARY BELLE the cow on a 90s car stereo's LED panel, dancing on the tempo over a neon floor of the bands.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/vu_bella.pack",
+    "follow": "main",
+    "version": 10,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [],
+    "picture": {
+      "path": "packs/vu_bella/picture.png"
+    }
+  },
+  {
+    "id": "vu_andy",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "looks"
+    ],
+    "description": "A look for vu: ANDY, an orange tabby in a red 26 jersey who does the Griddy on an LED pitch, plops when it goes quiet and MEOWs.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/vu_andy.pack",
+    "follow": "main",
+    "version": 8,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [],
+    "picture": {
+      "path": "packs/vu_andy/picture.png"
+    }
+  },
+  {
+    "id": "vu_goodtimes",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "looks"
+    ],
+    "description": "A look for vu: GOOD TIMES, a feedback picture warped, faded and kicked by the beats, four presets (tunnel, swirl, ripple, bloom).",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/vu_goodtimes.pack",
+    "follow": "main",
+    "version": 3,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [],
+    "picture": {
+      "path": "packs/vu_goodtimes/picture.png"
+    }
+  },
+  {
+    "id": "vu_scope",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "looks"
+    ],
+    "description": "A look for vu: SCOPE, the mix's wave, a stereo goniometer and a phase bar on phosphor screens.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/vu_scope.pack",
+    "follow": "main",
+    "version": 3,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [],
+    "picture": {
+      "path": "packs/vu_scope/picture.png"
+    }
   }
 ]

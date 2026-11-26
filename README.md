@@ -1,7 +1,7 @@
 # field-packs releases
 
-Packs for the **OP-1 Field** on **OS 1.7.3+0** with Faust's [open-field](https://github.com/LaP0573/open-field), by
-hasis. This repository holds the released pack files only (no sources). Four releases:
+Packs for the **OP-1 Field** on **OS 1.7.3** (the +0 and +1 releases both work) with Faust's [open-field](https://github.com/LaP0573/open-field), by
+hasis. This repository holds the released pack files only (no sources). Five releases:
 
 ## fx 1.3: three effect packs
 
@@ -72,6 +72,35 @@ version wrote into `user/synth_presets/<engine>/` stay as they were: delete that
 | --- | --- | --- |
 | ![lilith's face](docs/screenshots/lilith-face.png) | ![the clarinet's face](docs/screenshots/clarinet-face.png) | ![boarder's face](docs/screenshots/boarder-face-chord.png) |
 
+## vu 34: visualizers on the mixer
+
+[vu](packs/vu/README.md) (`vu.pack`, version 34) paints the master mix (after the master effect) on TE's mixer levels
+page. Tap the mixer key (let go within 0.3 s) for the next look; on a look the 1st to 4th knobs turn TE's master EQ
+(LOW, MID, HIGH, ALL). With punch 3+ and **punch keys** on, the white keys hold punch's effects on a look (the effect's
+name small at the top left; turning its knobs shows one thin line of values at the bottom). With markers 94+, shift +
+a key on a look cues that marker as on the tape screen.
+
+**Pick the one or two looks you like and copy just those plus vu.pack; the zip has all nine to choose from.**
+
+| Pack | Looks | Version |
+| --- | --- | --- |
+| [vu](packs/vu/README.md) (needed) | none of its own: the analysis, the tap, the EQ knobs, the settings | 34 |
+| [vu_spectrum](packs/vu_spectrum/README.md) | SPECTRUM (an LED analyser) and SUNDOWN (a synthwave sunset whose mountains are the bands) | 5 |
+| [vu_classic](packs/vu_classic/README.md) | CLASSIC: thin bars with peak caps, or the wave as dots / lines | 4 |
+| [vu_lcd](packs/vu_lcd/README.md) | LCD: a backlit dot-matrix panel with the tape, the BPM and 30 bars | 5 |
+| [vu_console](packs/vu_console/README.md) | CONSOLE: an old film-and-TV audio console | 4 |
+| [vu_meter](packs/vu_meter/README.md) | VU: two needle meters with PEAK lamps | 4 |
+| [vu_bella](packs/vu_bella/README.md) | BELLA: MARY BELLE the cow dancing on a 90s car stereo's LED panel | 10 |
+| [vu_andy](packs/vu_andy/README.md) | ANDY: an orange tabby in a red 26 jersey who does the Griddy, plops when it goes quiet and MEOWs (our cat, Andruella Robertson) | 8 |
+| [vu_goodtimes](packs/vu_goodtimes/README.md) (optional) | GOOD TIMES: a feedback picture kicked by the beats | 3 |
+| [vu_scope](packs/vu_scope/README.md) (optional) | SCOPE: the wave, a goniometer and a phase bar | 3 |
+
+Settings under settings > packs > vu: **EQ knobs** (on) and **punch keys** (off; with punch 3 the white keys hold its
+effects on a look). The look you leave on is kept in `user/pf/vu/look.txt`. **look** (the look by name) and **classic** (CLASSIC's
+style: bars / dots / lines) appear in settings on bases with option words (open-field's coming base; ours now); on
+other bases those two rows don't show, the mixer key's tap switches looks and CLASSIC draws bars.
+The tap does not clash with Faust's sidechain (shift + mixer).
+
 ## Experimental: lanes 87 (pre-release)
 
 Waveforms and a vertical zoom on the Field's own tape screen: `waveform` on in settings > PACKS > LANES, then hold
@@ -83,9 +112,9 @@ the screen, your open-field version and other packs.
 
 ## Install
 
-1. **Requirements:** an OP-1 Field on **OS 1.7.3+0** (not 1.7.3+1) with open-field installed by Faust's install page
+1. **Requirements:** an OP-1 Field on **OS 1.7.3** (the +0 and +1 releases both work) with open-field installed by Faust's install page
    (it puts the loader and `base.pack` on the unit; open-field's `docs/guide.md`). Nothing else.
-2. Download `fx-1.3.zip`, `cherd-57.zip`, `recstart-13.zip` and / or `engines-2.zip` from this repository's **Releases** and unzip it (check the files
+2. Download `fx-1.3.zip`, `cherd-57.zip`, `recstart-13.zip`, `engines-2.zip` and / or `vu-34.zip` from this repository's **Releases** and unzip it (check the files
    against `SHA256SUMS` if you like). Or take the `.pack` files from [`packs/`](packs) here.
 3. Put the unit into disk mode and copy the `.pack` files into the unit's folder **`packs`** (in the bootloader's drive
    mode: `user/pk`). Take only the ones you want.

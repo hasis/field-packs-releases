@@ -1,5 +1,17 @@
 # Changelog
 
+## vu 34, 2026-11-26
+
+The first vu release: the mixer's visualizers, in `vu-34.zip`, named after `vu.pack`'s version. **vu 34** (`vu.pack`) is
+the host; each look is its own pack: **vu_spectrum 5** (SPECTRUM, SUNDOWN), **vu_classic 4**, **vu_lcd 5**,
+**vu_console 4**, **vu_meter 4** (VU), **vu_bella 10** (BELLA), **vu_andy 8** (ANDY), and as optional extras
+**vu_goodtimes 3** (GOOD TIMES) and **vu_scope 3** (SCOPE). Tap the mixer key on the levels page for the next look; the
+knobs on a look turn TE's master EQ. With punch 3+ the white keys hold punch's effects on a look: no strip while held,
+one thin line while its knobs turn. With markers 94+, shift + a key on a look cues a marker. Settings under settings >
+packs > vu: EQ knobs (on), punch keys (off), and on bases with option words look (by name) and classic (bars / dots /
+lines); on other bases those two rows don't show and the tap changes the look (`user/pf/vu/look.txt` keeps it).
+Pick the one or two looks you like and copy just those plus vu.pack; the zip has all nine to choose from.
+
 ## engines 2, 2026-11-26
 
 The first engines release, `engines-2.zip`: **lilith 16**, **clarinet 16** and **boarder 22**, synth engines in the
