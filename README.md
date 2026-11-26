@@ -1,7 +1,7 @@
 # field-packs releases
 
 Packs for the **OP-1 Field** on **OS 1.7.3** (the +0 and +1 releases both work) with Faust's [open-field](https://github.com/LaP0573/open-field), by
-hasis. This repository holds the released pack files only (no sources). Five releases:
+hasis. This repository holds the released pack files only (no sources). Five releases and one pre-release:
 
 ## fx 1.3: three effect packs
 
@@ -97,7 +97,7 @@ a key on a look cues that marker as on the tape screen.
 
 Settings under settings > packs > vu: **EQ knobs** (on) and **punch keys** (off; with punch 3 the white keys hold its
 effects on a look). The look you leave on is kept in `user/pf/vu/look.txt`. **look** (the look by name) and **classic** (CLASSIC's
-style: bars / dots / lines) appear in settings on bases with option words (open-field's coming base; ours now); on
+style: bars / dots / lines) appear in settings on bases with option words (open-field PR #56, pending); on
 other bases those two rows don't show, the mixer key's tap switches looks and CLASSIC draws bars.
 The tap does not clash with Faust's sidechain (shift + mixer).
 
@@ -113,9 +113,11 @@ the screen, your open-field version and other packs.
 ## Install
 
 1. **Requirements:** an OP-1 Field on **OS 1.7.3** (the +0 and +1 releases both work) with open-field installed by Faust's install page
-   (it puts the loader and `base.pack` on the unit; open-field's `docs/guide.md`). Nothing else.
+   (it puts the loader and `base.pack` on the unit; open-field's `docs/guide.md`): open-field 0.24 (base 42) with
+   loader N1 or N2, or an older base from 38. Nothing else. The packs are built with open-field's stock tools.
 2. Download `fx-1.3.zip`, `cherd-57.zip`, `recstart-13.zip`, `engines-2.zip` and / or `vu-34.zip` from this repository's **Releases** and unzip it (check the files
-   against `SHA256SUMS` if you like). Or take the `.pack` files from [`packs/`](packs) here.
+   against `SHA256SUMS` if you like); each zip's own README.md says what is in it. Or take the `.pack` files from
+   [`packs/`](packs) here.
 3. Put the unit into disk mode and copy the `.pack` files into the unit's folder **`packs`** (in the bootloader's drive
    mode: `user/pk`). Take only the ones you want.
 4. Leave disk mode and switch the unit off and on.
