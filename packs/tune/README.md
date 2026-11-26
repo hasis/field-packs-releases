@@ -11,7 +11,7 @@ both there the loader runs the earlier file by name, `autotune.pack`, and leaves
 earlier pack offers the same name"). Sounds that use the effect `tune` keep it: the effect's name did not change. The
 page's settings last for the session anyway, so nothing is lost.
 
-Version 28, level 8, for OP-1 Field OS 1.7.3+0 with open-field 0.12 or later.
+Version 28, level 8, for OP-1 Field OS 1.7.3 (+0 or +1) with open-field 0.12 or later.
 
 ## Screenshots
 

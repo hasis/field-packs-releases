@@ -7,7 +7,7 @@ not samples: a reed that beats against the mouthpiece, the air through it, and t
 It has its own animated face and five sounds. Long notes keep breathing; slurs change holes, they never slide. Part of
 the **engines 2** release. **[The clarinet manual](MANUAL.md)** has every gesture and the sounds in detail.
 
-**Version 16, released in engines 2**, level 9, for OP-1 Field OS 1.7.3+0 with open-field 0.12 or later. **Native:** it
+**Version 16, released in engines 2**, level 9, for OP-1 Field OS 1.7.3 (+0 or +1) with open-field 0.12 or later. **Native:** it
 renders through Faust's level 9 engine interface alone: each of the unit's voices holds a whole model and the model is
 handed on from voice to voice, so slurs open the hole inside one model as before. The unit's envelope, velocity, pan,
 mix, T3 effect and fx train apply to it; synthbus is no longer needed. Its sounds carry the unit's POLY play mode and a

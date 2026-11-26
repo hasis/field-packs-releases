@@ -1,6 +1,6 @@
 # boarder manual
 
-**A tonewheel organ you play from the keys of the OP-1 Field.** boarder.pack 22, for OP-1 Field OS 1.7.3+0 with
+**A tonewheel organ you play from the keys of the OP-1 Field.** boarder.pack 22, for OP-1 Field OS 1.7.3 (+0 or +1) with
 Faust's [open-field](https://github.com/LaP0573/open-field) 0.12 or later.
 
 boarder is a synth engine in TE's own engine list. It works like the electromechanical organs it is modelled on:

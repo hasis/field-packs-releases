@@ -7,7 +7,7 @@ square, the second one tunable and with hard sync) into a four-pole ladder low-p
 own decay envelope on the cutoff. Her T1 page is an animated face, a phoenix in a medallion that moves with the knobs
 and the notes. Ten sounds come with her.
 
-**Version 16, released in engines 2** (`engines-2.zip`), for OS 1.7.3+0 with open-field 0.12. **Native:** she renders
+**Version 16, released in engines 2** (`engines-2.zip`), for OS 1.7.3 (+0 or +1) with open-field 0.12. **Native:** she renders
 through Faust's level 9 engine interface alone, like other developers' engines. The unit's envelope, velocity, pan, mix,
 T3 effect and fx train apply to her as to its own engines; synthbus is no longer needed and the pack asks nothing but its
 engine. Her sounds carry the unit's POLY play mode (her own render keeps her mono). The file: [`lilith.pack`](../lilith.pack).
@@ -47,7 +47,7 @@ open-field puts them into `user/synth_presets/lilith/`, beside the unit's own so
 
 ## Needs and works with
 
-- **Needs:** an OP-1 Field on OS 1.7.3+0 with open-field installed (its `base.pack`). Nothing else.
+- **Needs:** an OP-1 Field on OS 1.7.3 (+0 or +1) with open-field installed (its `base.pack`). Nothing else.
 - **Works with:** CHERD (its arpeggios play on her; a chord sounds as its last note), TE's sequencers and the keyboard, BEIGNET (wagons) on the master, tape.
 - She plays in the unit's own voices, before the T3 effect: TE's T3 effect, snowtrain and fx train change her sound directly. No synthbus.
 

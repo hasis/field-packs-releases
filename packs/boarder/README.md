@@ -7,7 +7,7 @@ shaft, nine drawbars, percussion, key click, a scanner vibrato and chorus, and a
 voices from one manual on one MIDI channel. It is mono and made to play into a rotary effect. **[The boarder
 manual](MANUAL.md)** has every gesture and the sounds in detail.
 
-**Version 22, released in engines 2**, level 9, for OP-1 Field OS 1.7.3+0 with open-field 0.12 or later. **Native:** it
+**Version 22, released in engines 2**, level 9, for OP-1 Field OS 1.7.3 (+0 or +1) with open-field 0.12 or later. **Native:** it
 renders through Faust's level 9 engine interface alone: each of the unit's voices plays its own key of the organ (wheels
 on one shaft, scanner and DRIVE per key), and the unit's envelope, mix, T3 effect and fx train (ROTARY) apply to it;
 synthbus is no longer needed. Its sounds are at volume 32767 (the native engine sits at TE's engine level). Its 8'
@@ -41,7 +41,7 @@ whistle (tonewheel); combo, fire, garage, sixties, surf (combo modes). Knobs are
 
 ## Needs and works with
 
-- open-field 0.12 (base 30 or later), OS 1.7.3+0.
+- open-field 0.12 (base 30 or later), OS 1.7.3 (+0 or +1).
 - TE's T3 effect, snowtrain and fx train work on it directly; no synthbus.
 - Made to go into a rotary effect: the ROTARY wagon.
 

@@ -11,7 +11,7 @@ is the wagon drawn above it. Part of the **fx 1** release.
 
 (Renders by the pack's own drawing code, `check.sh`; the unit draws the same faceplate.)
 
-Version 17, level 8, OP-1 Field OS 1.7.3+0, open-field 0.12 or later (Faust's stock base 32 or ours).
+Version 17, level 8, OP-1 Field OS 1.7.3 (+0 or +1), open-field 0.12 or later (Faust's stock base 32 or ours).
 
 ## In short
 

@@ -7,7 +7,7 @@ recstart lets **incoming sound** start it too: when the input goes over TE's THR
 an MPC, a drum machine or any gear on line in or USB: hold REC, start your gear, and the take begins with its first
 sound.
 
-Version 13, level 6, for OS 1.7.3+0 with open-field 0.12. Released as **recstart 13** (its own small release).
+Version 13, level 6, for OS 1.7.3 (+0 or +1) with open-field 0.12. Released as **recstart 13** (its own small release).
 
 Screenshots: none yet. Its only drawing is a small flash in the top right corner of TE's tape screen while it
 waits, saying what it waits for: WAITING: INPUT TE -24 (TE's THRESHOLD) or WAITING: INPUT -36 dB (its own).

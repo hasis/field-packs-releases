@@ -1,6 +1,6 @@
 # OP-1 Field: Player's Guide to field-packs
 
-Everything the released packs add to the OP-1 Field, and how to play them: OS 1.7.3+0 with Faust's open-field. **fx 1.1** (snowtrain, wagons, BEIGNET, TUNE) is section 3; **CHERD 37**, its own release with its own [manual](../packs/cherd/MANUAL.md), is section 2. Where a feature needs one of our forks of Faust's platform packs (fx train 18+, 8 tracks 13), the text says so; everything else runs on Faust's stock open-field. Pack versions: the [README](../README.md). Gestures were checked against each pack's input code (flash words are quoted as the code prints them).
+Everything the released packs add to the OP-1 Field, and how to play them: OS 1.7.3 (+0 or +1) with Faust's open-field. **fx 1.1** (snowtrain, wagons, BEIGNET, TUNE) is section 3; **CHERD 37**, its own release with its own [manual](../packs/cherd/MANUAL.md), is section 2. Where a feature needs one of our forks of Faust's platform packs (fx train 18+, 8 tracks 13), the text says so; everything else runs on Faust's stock open-field. Pack versions: the [README](../README.md). Gestures were checked against each pack's input code (flash words are quoted as the code prints them).
 
 **How to read the gestures**
 

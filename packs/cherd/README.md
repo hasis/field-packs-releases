@@ -4,7 +4,7 @@
 from the key and scale you set; the left octave picks the chord's flavor. Strum, comp, arp and a FEEL page (voice
 leading, swing, humanize, comp pattern). Chord names in fakebook style (Field Sans, from Petaluma Script).
 
-Version 57, for OS 1.7.3+0 with open-field 0.12. Released on its own as **CHERD 57** (`cherd-57.zip`); the release
+Version 57, for OS 1.7.3 (+0 or +1) with open-field 0.12. Released on its own as **CHERD 57** (`cherd-57.zip`); the release
 before was CHERD 37. The built file: [`packs/cherd.pack`](../cherd.pack). Chains are not in this release (coming in a
 later one): HELP held + a click or the 2nd..4th knob does nothing, HELP + a root plays its chord. **The manual:
 [MANUAL.md](MANUAL.md)** (chords, Alt, Spice, flows, scales, strum, comp, arp, the screen, settings).

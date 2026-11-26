@@ -1,6 +1,6 @@
 # clarinet manual
 
-**A clarinet you play from the keys of the OP-1 Field.** clarinet.pack 16, for OP-1 Field OS 1.7.3+0 with Faust's
+**A clarinet you play from the keys of the OP-1 Field.** clarinet.pack 16, for OP-1 Field OS 1.7.3 (+0 or +1) with Faust's
 [open-field](https://github.com/LaP0573/open-field) 0.12 or later.
 
 The clarinet is a synth engine in TE's own engine list. Its sound is not sampled: it is worked out sample by sample from
@@ -85,7 +85,7 @@ Change any knob and save the sound as usual; a sound saved on the engine keeps i
 
 ## 7. Install and remove
 
-**Needs:** an OP-1 Field on OS 1.7.3+0 (not 1.7.3+1) with open-field installed by Faust's install page. Nothing else.
+**Needs:** an OP-1 Field on OS 1.7.3 (the +0 and +1 releases both work) with open-field installed by Faust's install page. Nothing else.
 
 **Install:** tick it on Faust's install page once it is listed there, or by hand: put the unit into disk mode, copy
 `clarinet.pack` into the unit's folder `packs` (in the bootloader's drive mode the folder is `user/pk`), leave disk mode

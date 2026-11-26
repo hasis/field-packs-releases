@@ -1,6 +1,6 @@
 # lilith manual
 
-**A mono virtual-analog bass engine for the OP-1 Field.** lilith.pack 16, for OP-1 Field OS 1.7.3+0 with Faust's
+**A mono virtual-analog bass engine for the OP-1 Field.** lilith.pack 16, for OP-1 Field OS 1.7.3 (+0 or +1) with Faust's
 [open-field](https://github.com/LaP0573/open-field) 0.12 or later. Released as **engines 2**.
 
 lilith is a new synth engine in the unit's engine list, beside TE's own. Two oscillators run into a four-pole ladder
@@ -98,7 +98,7 @@ its own sounds. Pick them as you pick any sound; a sound you save on lilith keep
 
 ## 6. Install and removal
 
-**Needs:** an OP-1 Field on **OS 1.7.3+0** (not 1.7.3+1) with open-field installed by Faust's install page (it puts the
+**Needs:** an OP-1 Field on **OS 1.7.3** (the +0 and +1 releases both work) with open-field installed by Faust's install page (it puts the
 loader and `base.pack` on the unit; open-field's `docs/guide.md`). Nothing else.
 
 **Install by hand:**
@@ -119,7 +119,7 @@ misbehaves.
 
 ## 7. Limits
 
-- OS 1.7.3+0 only, with open-field.
+- OS 1.7.3 (+0 or +1), with open-field.
 - No settings or files of her own besides the ten sounds.
 - She renders in the unit's own voices through open-field's engine interface and shows under her own name; TE's engines all stay.
 

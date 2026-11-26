@@ -1,6 +1,6 @@
 # CHERD manual
 
-**Chords from a key, a scale and a genre, on the OP-1 Field.** cherd.pack 57, for OP-1 Field OS 1.7.3+0 with Faust's
+**Chords from a key, a scale and a genre, on the OP-1 Field.** cherd.pack 57, for OP-1 Field OS 1.7.3 (+0 or +1) with Faust's
 [open-field](https://github.com/LaP0573/open-field) 0.12 or later.
 
 Press one key and a whole chord plays. The left hand picks what kind of chord, the right hand picks the root. CHERD
@@ -534,7 +534,7 @@ Flow is a setting: once on jazz, *every* chord you play without a left key gets 
 
 ### Install
 
-CHERD is a pack for Faust's open-field 0.12 (base 30 or later) on an OP-1 Field running **OS 1.7.3+0** (not 1.7.3+1).
+CHERD is a pack for Faust's open-field 0.12 (base 30 or later) on an OP-1 Field running **OS 1.7.3** (the +0 and +1 releases both work).
 Install open-field with its install page first. Then:
 
 1. Unzip `cherd-57.zip` (check the files against `SHA256SUMS` if you like).

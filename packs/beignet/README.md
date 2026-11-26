@@ -102,6 +102,6 @@ or master saved with BEIGNET plays `punch`, switched off, on a unit without the 
 
 ### Needs
 
-- An OP-1 Field on **OS 1.7.3+0** with open-field 0.12: `base.pack` level 10 (base 30 or later). Nothing else; it
+- An OP-1 Field on **OS 1.7.3** (+0 or +1) with open-field 0.12: `base.pack` level 10 (base 30 or later). Nothing else; it
   reads no firmware address.
 

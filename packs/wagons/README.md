@@ -90,7 +90,7 @@ Holding the help key while switching on starts the unit with no packs. Delete th
 
 ### Needs
 
-- An OP-1 Field on **OS 1.7.3** (the original 1.7.3+0, not 1.7.3+1) with open-field 0.12: `base.pack` level 10
+- An OP-1 Field on **OS 1.7.3** (the +0 and +1 releases both work) with open-field 0.12: `base.pack` level 10
   (base 30 or later). Nothing else.
 - Optional: [CHERD](../cherd) (`cherd.pack`). When it is on the unit, FREEZE's FOLLOW moves with
   its chord; without it FREEZE holds its pitch.
