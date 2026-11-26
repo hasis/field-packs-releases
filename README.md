@@ -3,14 +3,14 @@
 Packs for the **OP-1 Field** on **OS 1.7.3+0** with Faust's [open-field](https://github.com/LaP0573/open-field), by
 hasis. This repository holds the released pack files only (no sources). Two releases:
 
-## fx 1.1: four effect packs
+## fx 1.2: four effect packs
 
 | Pack | What it does | Version |
 | --- | --- | --- |
-| [snowtrain](packs/snowtrain/README.md) | A light fx train: on each synth and drum sound, TE's T3 effect plus three pack effects as wagons; trains on tape tracks too. Presets. | 17 |
-| [wagons](packs/wagons/README.md) | Five effects in TE's own effect lists: BOOST, GATE, FREEZE, TAPE, JUNEAUX. | 13 |
-| [beignet](packs/beignet/README.md) | BEIGNET, a mastering sweetener for the master slot: glue, tone, width, loud, a -1 dBFS limiter; presets. | 2 |
-| [TUNE](packs/tune/README.md) (`tune.pack`) | Pitch correction on the live input (shift + HELP) with harmonies, and a TUNE effect. | 28 |
+| [snowtrain](packs/snowtrain/README.md) | A light fx train: on each synth and drum sound, TE's T3 effect plus three pack effects as wagons; trains on tape tracks too. Presets. A click on a pack effect's wagon opens its values page. | 20 |
+| [wagons](packs/wagons/README.md) | Six effects in TE's own effect lists: BOOST, GATE, FREEZE, TAPE, JUNEAUX and ROTARY (a rotary speaker cabinet). | 17 |
+| [beignet](packs/beignet/README.md) | BEIGNET, a mastering sweetener for the master slot: glue, tone, width, loud, a -1 dBFS limiter; presets. | 3 |
+| [TUNE](packs/tune/README.md) (`tune.pack`) | Pitch correction on the live input (shift + HELP) with harmonies, and a TUNE effect. | 29 |
 
 GATE, FREEZE and TUNE follow CHERD's chord when CHERD is installed.
 
@@ -54,7 +54,7 @@ the screen, your open-field version and other packs.
 
 1. **Requirements:** an OP-1 Field on **OS 1.7.3+0** (not 1.7.3+1) with open-field installed by Faust's install page
    (it puts the loader and `base.pack` on the unit; open-field's `docs/guide.md`). Nothing else.
-2. Download `fx-1.1.zip` and / or `cherd-37.zip` from this repository's **Releases** and unzip it (check the files
+2. Download `fx-1.2.zip` and / or `cherd-37.zip` from this repository's **Releases** and unzip it (check the files
    against `SHA256SUMS` if you like). Or take the `.pack` files from [`packs/`](packs) here.
 3. Put the unit into disk mode and copy the `.pack` files into the unit's folder **`packs`** (in the bootloader's drive
    mode: `user/pk`). Take only the ones you want.
