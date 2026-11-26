@@ -1,7 +1,7 @@
 # field-packs releases
 
 Packs for the **OP-1 Field** on **OS 1.7.3+0** with Faust's [open-field](https://github.com/LaP0573/open-field), by
-hasis. This repository holds the released pack files only (no sources). Three releases:
+hasis. This repository holds the released pack files only (no sources). Four releases:
 
 ## fx 1.3: three effect packs
 
@@ -52,6 +52,26 @@ any gear on line in or USB: hold REC, start your gear, and the take begins with 
 WAITING: INPUT shows in the top right corner of the tape screen, with the level. Settings > PACKS > RECSTART: auto start
 on / off, threshold TE or -60 to -24 dBFS. No files of its own; a one-page [quick start](docs/recstart-quickstart.pdf).
 
+## engines 2: lilith, the clarinet and boarder, synth engines
+
+Three engines in the unit's engine list (shift + T1), **native**: they render in the unit's own voices through
+open-field's engine interface, so TE's T3 effect, snowtrain and fx train apply to them directly, as to TE's own engines.
+TE's velocity sets lilith's loudness; TE's pitch bend and glide move the clarinet hole by hole. Saved sounds keep working.
+
+| Pack | What it does | Version |
+| --- | --- | --- |
+| [lilith](packs/lilith/README.md) | A mono virtual-analog bass engine: two oscillators into a Moog-style ladder filter with its own decay envelope, an animated face, ten sounds. [Manual](packs/lilith/MANUAL.md), [quick start](docs/lilith-quickstart.pdf). | 16 |
+| [clarinet](packs/clarinet/README.md) | A clarinet: a physical model of the reed and the bore, not samples, an animated face, five sounds. One voice; long notes breathe, slurs change holes. [Manual](packs/clarinet/MANUAL.md), [quick start](docs/clarinet-quickstart.pdf). | 16 |
+| [boarder](packs/boarder/README.md) | An organ, six voices: tonewheels (nine drawbars, percussion, key click, scanner vibrato and chorus, a driven preamp) and two combo-organ modes; twenty sounds and an organist on T1. Made for the ROTARY wagon. [Manual](packs/boarder/MANUAL.md), [quick start](docs/boarder-quickstart.pdf). | 22 |
+
+The engines sit at TE's own engine level; the clarinet's and boarder's sounds have a raised volume. Sounds an earlier
+version wrote into `user/synth_presets/<engine>/` stay as they were: delete that folder before you restart to get these.
+**synthbus is no longer needed:** if `synthbus.pack` is on your unit, delete it.
+
+| lilith | clarinet | boarder |
+| --- | --- | --- |
+| ![lilith's face](docs/screenshots/lilith-face.png) | ![the clarinet's face](docs/screenshots/clarinet-face.png) | ![boarder's face](docs/screenshots/boarder-face-chord.png) |
+
 ## Experimental: lanes 87 (pre-release)
 
 Waveforms and a vertical zoom on the Field's own tape screen: `waveform` on in settings > PACKS > LANES, then hold
@@ -65,7 +85,7 @@ the screen, your open-field version and other packs.
 
 1. **Requirements:** an OP-1 Field on **OS 1.7.3+0** (not 1.7.3+1) with open-field installed by Faust's install page
    (it puts the loader and `base.pack` on the unit; open-field's `docs/guide.md`). Nothing else.
-2. Download `fx-1.3.zip`, `cherd-57.zip` and / or `recstart-13.zip` from this repository's **Releases** and unzip it (check the files
+2. Download `fx-1.3.zip`, `cherd-57.zip`, `recstart-13.zip` and / or `engines-2.zip` from this repository's **Releases** and unzip it (check the files
    against `SHA256SUMS` if you like). Or take the `.pack` files from [`packs/`](packs) here.
 3. Put the unit into disk mode and copy the `.pack` files into the unit's folder **`packs`** (in the bootloader's drive
    mode: `user/pk`). Take only the ones you want.
@@ -87,4 +107,4 @@ write the files on your unit: take packs only from people you trust.**
 ## Licence
 
 MIT, [LICENSE](LICENSE), 2026 hasis. Third-party parts keep their own licences: [THIRD-PARTY.md](THIRD-PARTY.md)
-(Field Sans inside cherd.pack, OFL: [OFL.txt](OFL.txt)). History: [CHANGELOG.md](CHANGELOG.md).
+(Field Sans inside cherd.pack, OFL: [OFL.txt](OFL.txt); the clarinet's and boarder's published sources). Not affiliated with Moog Music: "Moog-style" names a filter style only. History: [CHANGELOG.md](CHANGELOG.md).

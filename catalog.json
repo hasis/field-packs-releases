@@ -10,7 +10,7 @@
     "repository": "https://github.com/hasis/field-packs-releases",
     "path": "packs/snowtrain.pack",
     "follow": "main",
-    "version": 17,
+    "version": 20,
     "firmware": "1.7.3",
     "needs": [],
     "folders": [
@@ -32,16 +32,22 @@
     "author": "hasis",
     "status": "listed",
     "categories": [
-      "effects"
+      "effects",
+      "mixer"
     ],
-    "description": "Five effects in the unit's own effect lists: BOOST, GATE, FREEZE, TAPE and JUNEAUX.",
+    "description": "Seven effects in TE's effect lists: BOOST, GATE, FREEZE, TAPE, JUNEAUX, ROTARY, and BEIGNET, a mastering sweetener for the master.",
     "repository": "https://github.com/hasis/field-packs-releases",
     "path": "packs/wagons.pack",
     "follow": "main",
-    "version": 13,
+    "version": 18,
     "firmware": "1.7.3",
     "needs": [],
-    "folders": [],
+    "folders": [
+      {
+        "name": "beignet",
+        "place": "beignet"
+      }
+    ],
     "picture": {
       "path": "packs/wagons/picture.png"
     }
@@ -82,12 +88,31 @@
     "repository": "https://github.com/hasis/field-packs-releases",
     "path": "packs/tune.pack",
     "follow": "main",
-    "version": 28,
+    "version": 29,
     "firmware": "1.7.3",
     "needs": [],
     "folders": [],
     "picture": {
       "path": "packs/tune/picture.png"
+    }
+  },
+  {
+    "id": "recstart",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "tape"
+    ],
+    "description": "recstart: with REC held on a stopped tape, the first sound over TE's input THRESHOLD starts the take. For an MPC or gear on line in.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/recstart.pack",
+    "follow": "main",
+    "version": 13,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [],
+    "picture": {
+      "path": "packs/recstart/picture.png"
     }
   },
   {
@@ -101,7 +126,7 @@
     "repository": "https://github.com/hasis/field-packs-releases",
     "path": "packs/cherd.pack",
     "follow": "main",
-    "version": 37,
+    "version": 57,
     "firmware": "1.7.3",
     "needs": [],
     "folders": [
@@ -115,22 +140,60 @@
     }
   },
   {
-    "id": "recstart",
+    "id": "lilith",
     "author": "hasis",
     "status": "listed",
     "categories": [
-      "tape"
+      "library"
     ],
-    "description": "recstart: with REC held on a stopped tape, the first sound over the input threshold starts the take. For an MPC or gear on line in.",
+    "description": "lilith: a mono virtual-analog bass engine in the synth's engine list, a ladder filter, an animated face and ten sounds.",
     "repository": "https://github.com/hasis/field-packs-releases",
-    "path": "packs/recstart.pack",
+    "path": "packs/lilith.pack",
     "follow": "main",
-    "version": 13,
+    "version": 16,
     "firmware": "1.7.3",
     "needs": [],
     "folders": [],
     "picture": {
-      "path": "packs/recstart/picture.png"
+      "path": "packs/lilith/picture.png"
+    }
+  },
+  {
+    "id": "clarinet",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "library"
+    ],
+    "description": "A clarinet synth engine in the engine list: a reed and bore model, an animated face and five sounds. Long notes breathe, slurs change holes.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/clarinet.pack",
+    "follow": "main",
+    "version": 16,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [],
+    "picture": {
+      "path": "packs/clarinet/picture.png"
+    }
+  },
+  {
+    "id": "boarder",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "library"
+    ],
+    "description": "boarder: an organ engine in the engine list. Tonewheels with drawbars, percussion and scanner, two combo-organ modes, twenty sounds.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/boarder.pack",
+    "follow": "main",
+    "version": 22,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [],
+    "picture": {
+      "path": "packs/boarder/picture.png"
     }
   }
 ]

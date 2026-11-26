@@ -1,4 +1,4 @@
-field-packs releases (fx, CHERD)
+field-packs releases (fx, CHERD, recstart, engines)
 Copyright (c) 2026 hasis. MIT licence: see LICENSE.
 
 Not affiliated with Teenage Engineering. "OP-1" and "OP-1 Field" are Teenage Engineering's names, used here only to
@@ -14,5 +14,6 @@ These packs cannot run without it.
 Fonts: Field Sans (cherd's chord names, inside cherd.pack) is a Modified Version of Petaluma Script, Copyright (c) 2018
 Steinberg Media Technologies GmbH, with Reserved Font Name "Petaluma", under the SIL Open Font License 1.1 (OFL.txt).
 
-Other third-party parts built into the packs (OP-XY SDK headers, the xy-machines pitch-correction DSP, OP-XY Cherd's
-chord engine), all MIT, are listed in THIRD-PARTY.md.
+Other third-party parts built into the packs (OP-XY SDK headers, the xy-machines pitch-correction DSP), all MIT, are listed in THIRD-PARTY.md. "Moog" names a filter style only;
+lilith is not made or endorsed by Moog Music. The clarinet's reed model follows a published paper (no code taken;
+THIRD-PARTY.md names it).

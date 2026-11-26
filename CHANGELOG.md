@@ -1,5 +1,14 @@
 # Changelog
 
+## engines 2, 2026-11-26
+
+The first engines release, `engines-2.zip`: **lilith 16**, **clarinet 16** and **boarder 22**, synth engines in the
+unit's engine list, **native**: they render in the unit's own voices through open-field's engine interface. TE's T3
+effect, snowtrain and fx train apply to them directly (synthbus is no longer needed: delete `synthbus.pack` if you have
+it); TE's velocity changes lilith's loudness; TE's pitch bend and glide reach the clarinet, hole by hole. The engines sit
+at TE's engine level; the clarinet's and boarder's sounds have a raised volume (sounds an earlier version wrote into
+`user/synth_presets/<engine>/` stay: delete that folder to get the new ones). Saved sounds keep working.
+
 ## CHERD 57 and recstart 13, 2026-11-26
 
 **CHERD 57** (`cherd-57.zip`, cherd.pack 57; named after the pack's version, as CHERD 37 was). Since CHERD 37: **NEXT**
