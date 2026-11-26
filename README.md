@@ -1,7 +1,7 @@
 # field-packs releases
 
 Packs for the **OP-1 Field** on **OS 1.7.3+0** with Faust's [open-field](https://github.com/LaP0573/open-field), by
-hasis. This repository holds the released pack files only (no sources). Two releases:
+hasis. This repository holds the released pack files only (no sources). Three releases:
 
 ## fx 1.2: four effect packs
 
@@ -31,15 +31,25 @@ GATE, FREEZE and TUNE follow CHERD's chord when CHERD is installed.
 
 Screens captured on an OP-1 Field.
 
-## CHERD 37: the chord sequencer
+## CHERD 57: the chord sequencer
 
-[CHERD](packs/cherd/README.md) (`cherd.pack`, version 37): chords from one key, a sequencer in the synth's sequencer
-list, with flavors, strum, comp, arp and a FEEL page. **[The CHERD manual](packs/cherd/MANUAL.md)**; a one-page
+[CHERD](packs/cherd/README.md) (`cherd.pack`, version 57; CHERD 37 was the release before): chords from one key, a
+sequencer in the synth's sequencer list, with flavors, strum, comp, arp and a FEEL page. New since 37: **NEXT** (under
+the chord's name, the likeliest next chords, by name, ranked on the key picture), fakebook spelling, and **LOCK** (HELP
+held + a flavor key locks that flavor onto every chord). Chains are not in this release (coming in a later one). **[The CHERD manual](packs/cherd/MANUAL.md)**; a one-page
 [quick start](docs/CHERD-quickstart.pdf). The chord font (Field Sans) is inside the pack: nothing else to copy.
 
 | | |
 | --- | --- |
 | ![CHERD](docs/screens/cherd.png) | ![CHERD, another flavor](docs/screens/cherd2.png) |
+
+## recstart 13: sound starts the recording
+
+[recstart](packs/recstart/README.md) (`recstart.pack`, version 13): with REC held on a stopped tape, TE starts the take
+on the first key; recstart starts it on the first **sound** over TE's input THRESHOLD too. For an MPC, a drum machine or
+any gear on line in or USB: hold REC, start your gear, and the take begins with its first sound. While it waits,
+WAITING: INPUT shows in the top right corner of the tape screen, with the level. Settings > PACKS > RECSTART: auto start
+on / off, threshold TE or -60 to -24 dBFS. No files of its own; a one-page [quick start](docs/recstart-quickstart.pdf).
 
 ## Experimental: lanes 87 (pre-release)
 
@@ -54,7 +64,7 @@ the screen, your open-field version and other packs.
 
 1. **Requirements:** an OP-1 Field on **OS 1.7.3+0** (not 1.7.3+1) with open-field installed by Faust's install page
    (it puts the loader and `base.pack` on the unit; open-field's `docs/guide.md`). Nothing else.
-2. Download `fx-1.2.zip` and / or `cherd-37.zip` from this repository's **Releases** and unzip it (check the files
+2. Download `fx-1.2.zip`, `cherd-57.zip` and / or `recstart-13.zip` from this repository's **Releases** and unzip it (check the files
    against `SHA256SUMS` if you like). Or take the `.pack` files from [`packs/`](packs) here.
 3. Put the unit into disk mode and copy the `.pack` files into the unit's folder **`packs`** (in the bootloader's drive
    mode: `user/pk`). Take only the ones you want.

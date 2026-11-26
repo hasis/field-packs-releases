@@ -1,5 +1,16 @@
 # Changelog
 
+## CHERD 57 and recstart 13, 2026-11-26
+
+**CHERD 57** (`cherd-57.zip`, cherd.pack 57; named after the pack's version, as CHERD 37 was). Since CHERD 37: **NEXT**
+(the likeliest next chords by name under the chord, ranked on the key picture), fakebook spelling, every held flavor
+combination named and sounded, **LOCK** (HELP held + a flavor key; LOCK / UNLOCK flashes on the top line), HELP on
+CHERD's page is CHERD's alone, OCT shown under the 4th knob, about 60 KB less room. Chains are not in this release.
+
+**recstart 13** (`recstart-13.zip`), a new pack: with REC held on a stopped tape, the first sound over the input
+threshold starts the take. WAITING: INPUT flash with the level; settings > PACKS > RECSTART: auto start, threshold (TE
+or -60 to -24 dBFS).
+
 ## fx 1.1 and CHERD 37, 2026-11-24
 
 **fx 1.1:** snowtrain 17, wagons 13, beignet 2 (the fx 1.0 files, byte for byte) and **TUNE 28**, whose file is now

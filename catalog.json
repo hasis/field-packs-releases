@@ -113,5 +113,24 @@
     "picture": {
       "path": "packs/cherd/picture.png"
     }
+  },
+  {
+    "id": "recstart",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "tape"
+    ],
+    "description": "recstart: with REC held on a stopped tape, the first sound over the input threshold starts the take. For an MPC or gear on line in.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/recstart.pack",
+    "follow": "main",
+    "version": 13,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [],
+    "picture": {
+      "path": "packs/recstart/picture.png"
+    }
   }
 ]

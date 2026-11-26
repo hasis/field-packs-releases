@@ -1,6 +1,6 @@
 # CHERD manual
 
-**Chords from a key, a scale and a genre, on the OP-1 Field.** cherd.pack 37, for OP-1 Field OS 1.7.3+0 with Faust's
+**Chords from a key, a scale and a genre, on the OP-1 Field.** cherd.pack 57, for OP-1 Field OS 1.7.3+0 with Faust's
 [open-field](https://github.com/LaP0573/open-field) 0.12 or later.
 
 Press one key and a whole chord plays. The left hand picks what kind of chord, the right hand picks the root. CHERD
@@ -8,7 +8,7 @@ knows the key and the scale you are in, so one finger already plays the right ch
 bends it wherever you want. On the Field, CHERD is a synth sequencer: it plays chords on whatever synth the slot has.
 
 Knobs are named by position: the **1st knob** is the leftmost encoder, the **4th** the rightmost. A **click** is a press
-on the encoder. **A + B** means hold A, then press B. The chord logic is the OP-XY Cherd's, so both play the same chords.
+on the encoder. **A + B** means hold A, then press B. The chord logic is the same as hasis's OP-XY Cherd, so both play the same chords.
 
 **Contents:** 1 Quick start · 2 The keyboard · 3 The controls · 4 Building chords · 5 Alt, the altered dominants ·
 6 Spice · 7 Flow, the genres · 8 Scales · 9 Strum, comp and feel · 10 The arpeggiator · 11 Reading the screen ·
@@ -53,11 +53,11 @@ The Field's 24 keys run F to E twice. CHERD splits them in the middle: the lower
 
 | Key | Role | What it does |
 |---|---|---|
-| F | add6 | adds the sixth |
+| F | add6 | adds the major sixth, on any chord |
 | F# | dim | diminished (b3, b5) |
-| G | sus2 | suspended second |
+| G | sus2 | suspended second (1 2 5, on any root) |
 | G# | minor | minor third |
-| A | sus4 | suspended fourth |
+| A | sus4 | suspended fourth (1 4 5, on any root) |
 | A# | major | major third |
 | B | add9 | adds the ninth |
 | C | 9th | seventh and ninth |
@@ -97,7 +97,11 @@ On the CHERD page the four encoders are CHERD's. Turn them to set a value; **cli
 | 4th click | arp on / off (chapter 10) | the arp's mode and rate under the 4th knob |
 | shift held | the ARP page (chapter 10) | the ARP page over the screen |
 | shift + 4th click | keeps the ARP page open, so both hands can play while you turn its knobs; again to let it go | the ARP page |
-| HELP | one step back: the kept ARP page, then the FEEL page. On the main page HELP is TE's own | |
+| HELP (let go, no key under it) | one step back: the kept ARP page, then the FEEL page; on the main page nothing | |
+| HELP held + a left key | LOCK: that flavor stays on every chord until HELP + the key again (below) | |
+| *internal builds:* HELP held + 1st / 2nd / 3rd / 4th click | CHAINS: play / stop, save, to PATTERN or a MIDI lane, clear (chapter 10b) | PLAY, SAVE, TO PATTERN / TO LANE, CLEAR in the band under the knobs |
+| *internal builds:* HELP held + 2nd / 3rd / 4th turn | CHAINS: the step's length, the 3rd click's target, the slot (chapter 10b) | STEP, TARGET, SLOT in the line above them |
+| *internal builds:* HELP held + a root (right-octave key) | STEP ENTRY: that chord becomes the chain's next step (chapter 10b) | STEP 3/16 G7 2 BARS at the top |
 
 ### FEEL page
 
@@ -147,14 +151,24 @@ Hold any combination of left keys, then press a root. This is what each combinat
 | Major + 7th | C^7 | 1 3 5 7 |
 | Dom7 | C7 | 1 3 5 b7 |
 | Sus4 + 7th | C7SUS4 | 1 4 5 b7 |
+| Sus4 + 9th | C9SUS4 | 1 4 5 b7 9 |
+| Sus4 + 7th + add6 | C13SUS4 | 1 4 5 b7 13 |
+| Sus2 + 7th | C7SUS2 | 1 2 5 b7 |
+| Sus2 + add6 | C6SUS2 | 1 2 5 6 |
 | Dim + 7th | CO7 | 1 b3 b5 b7 |
 | Dim + add6 | Co7 | 1 b3 b5 6 |
+| Dim + 9th | CO9 | 1 b3 b5 b7 9 |
 | 9th | C^9 | 1 3 5 7 9 |
 | Minor + 9th | C-9 | 1 b3 5 b7 9 |
 | Major + 9th | C^9 | 1 3 5 7 9 |
 | add9 | CADD9 | 1 3 5 9 |
 | add6 | C6 | 1 3 5 6 |
 | Minor + add6 | C-6 | 1 b3 5 6 |
+| Minor + add9 + add6 | C-6/9 | 1 b3 5 6 9 |
+| add9 + add6 | C6/9 | 1 3 5 6 9 |
+| Dom7 + add6 | C13 | 1 3 5 b7 13 |
+| Major + 7th + add6 | C^13 | 1 3 5 7 13 |
+| Minor + 7th + add6 | C-13 | 1 b3 5 b7 13 |
 | Spice | C^13 | 1 3 7 9 13 |
 | Minor + Spice | C-11 | 1 b3 b7 9 11 |
 | Major + Spice | C^13 | 1 3 7 9 13 |
@@ -163,6 +177,8 @@ Hold any combination of left keys, then press a root. This is what each combinat
 | Alt + add6 | C7#5 | 1 3 #5 b7 |
 | Alt + Dim | C7b5 | 1 3 b5 b7 |
 | Alt + Sus4 | C7#11 | 1 3 5 b7 #11 |
+| Alt + Sus4 + add9 | C7#9#11 | 1 3 5 b7 #9 #11 |
+| Alt + 9th + add9 | C7ALT | 1 3 b7 b9 #9 |
 | Alt + 9th + Sus4 | C7b9#11 | 1 3 5 b7 b9 #11 |
 | Alt + add9 + add6 | C7#5#9 | 1 3 #5 b7 #9 |
 | Alt + Spice | C7ALT | 1 3 b7 b9 #9 b13 |
@@ -171,6 +187,9 @@ Hold any combination of left keys, then press a root. This is what each combinat
 
 - Quality + 7th: minor + 7th is m7, major + 7th is always maj7, sus4 + 7th is 7sus4, dim + 7th is half-diminished (m7b5).
 - Dom7 is always the dominant seventh. 9th is the seventh plus the ninth. add9 and add6 add just their note.
+- **LOCK** (cherd 50): hold HELP and press a left key to lock that flavor in: every chord plays as if you held it, until HELP + the same key again. Any number of extensions and one quality can be locked (a new locked quality replaces the old; a quality you hold wins over it; keys you hold add on top). A locked key is a large white dot on the key picture, and LOCK with the names flashes on the top line for a moment (UNLOCK when you clear one); with Spice locked the dots ripple through its colours as while it is held. The locks are saved with the tape.
+- **Every key you hold sounds** (cherd 49), and the name says exactly those notes. A sixth beside a seventh is a thirteenth (dom7 + add6 is C13). The only notes left out, on purpose: Spice's fifth; the ninth over Sus2 (it is the second itself); with no quality held, the 9th key's ninth where the scale's is a flat or sharp nine, and add6 over an augmented triad.
+- Sus2 and Sus4 are fixed, as Major, Minor and Dim are: 1 2 5 and 1 4 5 on any root, even where the key's own second or fourth is another note (Esus2 in C major has F#). add6 is the major sixth on any degree (Am6 in C major; on a diminished triad it makes the diminished seventh). Over Dim and the suspensions the seventh is the flat one.
 - No quality held: extensions stack on the chord your key and scale give that note, so they stay in the scale.
 - With a quality held: extensions stack on that triad.
 - Flow stays underneath: a genre's colour (a seventh, a ninth, a suspension) joins what you hold.
@@ -195,7 +214,7 @@ Alt alone plays the 7b9, the most common alteration. Each other key beside it th
 | sus4 + 9th | sharp eleven and flat nine | C7b9#11 | 3 5 b7 b9 #11 |
 | Spice | the full altered chord | C7ALT | 3 b7 b9 #9 b13 (no fifth) |
 
-7th, dom7 and major add nothing under Alt: the chord is a dominant already.
+7th, dom7, major and sus2 add nothing under Alt: the chord is a dominant already. The keys stack fully (cherd 49): sus4 + add9 is C7#9#11, dim + add6 both altered fifths (C7ALT). A chord with both ninths is a 7alt and has no natural fifth; a chord is five notes above its root, so with both ninths and the sharp five the flat five (or sharp eleven) gives way. Spice with Alt is always the full altered chord.
 
 ### Why it works this way
 
@@ -226,7 +245,7 @@ On C major with Flow off every degree gets the Spice chord of its mode:
 
 ### Spice follows the key and the scale
 
-Spice only plays notes that belong to the scale, so it always sounds right in the key. Where the scale gives a dominant its flat nine (the V of harmonic minor, the I of Phrygian dominant) that flat nine is the chord's colour, so Spice plays the 7b9 there, not a plain seventh.
+Spice only plays notes that belong to the scale, so it always sounds right in the key. Where the scale gives a dominant its flat nine (the V of harmonic minor, the I of Phrygian dominant) that flat nine is the chord's colour, so Spice plays the 7b9 there, not a plain seventh. Spice is never thinner than the 7th (cherd 49): where a major seventh chord's scale has no natural ninth (the bVI of harmonic minor, the bII of Phrygian dominant) it takes the sharp eleven the scale does give: Abmaj7(#11) in C harmonic minor.
 
 ### Spice and Flow
 
@@ -279,6 +298,8 @@ In A natural minor with Flow jazz the chords come out as A-9 BO7 C^9 D-9 E7b9 F^
 Scale off plays plain major chords on every root. Set a scale and each root inside it gets its own chord stacked from the scale's notes; roots outside the scale get a sensible chord (a major chord, or a passing diminished one on the leading tone, the tritone and, in a minor key, the raised third and sixth: C#dim and F#m7b5 in A minor).
 
 Harmonic minor is there for its major V and diminished vii; its i and III are the natural minor's (Am and C, not AmM7 and Caug). With Flow on color, the natural minor's V becomes the dominant seventh (E7 in A minor).
+
+The bebop scales (bopD, bopM, bopDo) are a mode plus one passing note: their chords are the mode's (bebop dominant's tonic is C7, bebop dorian's Cm7). The altered scale (alt) is played over a dominant: its tonic is the altered dominant (C+ alone, C7#5 with the 7th, C7ALT with the 9th, Spice or Flow jazz). In scales that are not seven notes the 7th key looks for a real seventh first (half-whole diminished: C7) and takes the sixth only where there is none (pentatonic: C6).
 
 | # | Header | Scale | Notes (from the tonic) |
 |---|---|---|---|
@@ -387,6 +408,55 @@ CHERD has its own arpeggiator. Click the 4th knob on the CHERD page to turn it o
 - Lead mode is not arpeggiated: it plays single notes as usual.
 - Its settings are kept per synth slot, like strum and comp, and follow the tape (chapter 14).
 
+## 10b. Chains: a chain of Cherds
+
+*Coming in a later release; internal builds only (`make cherd-internal`). CHERD 57's `cherd.pack` has no chains: there HELP held + a click or the 2nd..4th knob does nothing, and HELP + a root plays the chord.*
+
+CHERD remembers what you play. Every chord you strike by hand is kept with its root, the flavors it was struck with
+(held and locked) and when it came and how long you held it, to the nearest 16th. The kept chords are a **phrase**:
+the last 16 of them. Two bars with no key held, and the next chord starts a new phrase.
+
+Hold **HELP** and the band under the knobs shows two lines: the upper one what a **turn** sets, the lower one what a
+**click** does (dim when there is nothing to do it to).
+
+| Knob | Turn (upper line) | Click (lower line) |
+|---|---|---|
+| 1st | Key, as always | **PLAY / STOP** the slot's chain |
+| 2nd | **STEP**: the length of a step you enter: 1/16, 1/8, 1/4, 1/2, 1 BAR, 2 BARS | **SAVE** the phrase you played into the slot (SAVED 4 CHORDS) |
+| 3rd | **TARGET**: where the 3rd click sends the chain: PATTERN or a MIDI LANE | **TO PATTERN** / **TO LANE** |
+| 4th | **SLOT**, 1 to 16 (CHAIN 3 at the top right) | **CLEAR** the slot: the first press says AGAIN TO CLEAR, a second one within a second and a half clears it |
+
+**A chain plays the way keys do.** Each chord is struck as if you pressed its root with its flavors held: the Key,
+Scale, Flow, Spread and Smooth you set now, strum, comp and the arp all apply. Turn the Scale while it plays and the
+chain moves with it; hold a flavor (the 7th, Spice) and every chord of the chain takes it while you hold; play roots
+over it, and your chords sound with it (they become the next phrase, not part of the chain). The loop is the phrase
+rounded up to whole bars. It starts at once when the tape is stopped, on the next downbeat while it rolls.
+
+**Step entry: a chain chord by chord, no timing needed.** Hold HELP and press a root: that chord is added behind the
+slot's last one, one step long, and sounds while you hold the key. The top says what went in: STEP 3/16 G7 2 BARS
+(the third of sixteen chords, its name, its length). Set the step's length first with HELP + the 2nd knob. Flavors:
+the ones you hold when HELP goes down stay with the step, and so do the locked ones, so with HELP held a left key
+(LOCK) then a root enters that flavor's chord; press the left key again to take it off for the next. A slot holds 16
+chords and 16 bars: CHAIN FULL after that. Steps go straight into the slot (no SAVE); to start over, CLEAR it first.
+A step is never part of the phrase you played.
+
+**To PATTERN.** With the target on PATTERN, HELP + the 3rd click writes the chain into TE's PATTERN sequencer (synth
+side, seqx needed), replacing what was there: each chord's notes on its step, folded into the pattern's two octaves at
+the octave you are on, its length as seqx's note length, the pattern 16 steps long. A chain of one bar is one step a
+16th; a longer chain is squeezed and the top says how long a step is (1/8 A STEP: set TE's pattern to 1/8 to hear it
+in time). Save the pattern you had in seqbank first if you want to keep it.
+
+**To a MIDI lane.** Turn the 3rd knob right with HELP held (TO LANE), then HELP + the 3rd click: the chain's chords
+land as notes on the selected MIDI track of the tape, at the play-head, each chord as long as it is in the chain, at
+the pitches CHERD plays (no strum, comp or arp: plain chords). It needs miditracks 47, a MIDI track selected and the
+tape stopped; the play-head moves to the chain's end, so a second click writes the next pass behind it. The top says
+IN LANE 12 NOTES, or why not: AUDIO TRACK, STOP TAPE FIRST, NO MIDITRACKS.
+
+**Chains follow the tape.** Each tape has its own 16 slots (`user/pf/cherd/tape<N>.chn`), copied when you copy the
+tape and gone when a new tape is made in its place, like CHERD's other settings. This needs a base that keeps files
+per tape (our base 39); under Faust's stock base the chains stay one set for the unit, `user/pf/cherd/chains.bin`.
+The first time CHERD 55 runs with files per tape, the chains you had (chains.bin) move into the tape that is mounted.
+
 ## 11. Reading the screen
 
 - Top line: the four knob values, each above its knob in its colour (Key, Scale, Spread, Flow), or on the FEEL page
@@ -394,6 +464,14 @@ CHERD has its own arpeggiator. Click the 4th knob on the CHERD page to turn it o
 - The big name in the middle is the chord you are playing, in fakebook style (Field Sans, made from Petaluma Script):
   the root, a flat or sharp, then the chord's symbol. Notes are spelled by what they do: borrowed chords on the flat 2,
   3, 6 and 7 are flats (Eb, Ab, Bb), passing and raised ones sharps (C#dim, F#dim, G# in A minor).
+- **Spelling** (cherd 49). A Key keeps one name whatever the Scale: C Db D Eb E F F# G Ab A Bb B for scales with a
+  major third, the same with C# and G# for scales with a minor third. Every scale note has its own letter, so some keys
+  show B#, E#, Cb, Fb or a double sharp (G# harmonic minor: F##; its V7 is D# F## A# C#). Pentatonic and blues scales
+  are spelled from their parent scale (the blue note is the flat five). A borrowed chord that would need a double flat
+  takes the plain letter (bVI in Db major is A). A diminished chord that comes down a semitone is flat (Em7 Ebo7 Dm7).
+  The letters on the key picture follow the same spelling.
+- Under the 1st knob: the chord's numeral. A dominant keeps its 7 (I7, V7), a secondary dominant is V/ii, a slashed o
+  is half-diminished (viiø7), o7 a diminished seventh, + an augmented chord.
 - Under the chord, each under its knob: the strum (2nd), the comp pattern (3rd) and the arp (4th) when they are on; on
   the FEEL page, SNAP under the 2nd.
 - The keyboard along the bottom shows the chord as it sounds. The root is brighter than the other notes.
@@ -409,7 +487,9 @@ CHERD has its own arpeggiator. Click the 4th knob on the CHERD page to turn it o
 | 7 | dominant seventh | O7 | half-diminished (m7b5) |
 | 13, ^13, -11 | thirteenth, maj13, minor eleventh | 5 | power chord |
 | 7b9 7#9 7#5 | altered dominants | 7ALT | full altered dominant |
-| 7#5#9 7b5#9 7b9#11 7#5b9 | combined alterations | 7SUS4 | seventh, suspended fourth |
+| 7#5#9 7b5#9 7b9#11 7#5b9 7#9#11 | combined alterations | 7SUS4 | seventh, suspended fourth |
+| 9SUS4 13SUS4 7SUS2 6SUS2 | suspended chords with extensions | -6/9 -13 | minor six-nine, minor thirteenth |
+| O9 O13 | half-diminished with the ninth, thirteenth | 13(b9) ^13(#11) | Spice + add6 on a 7b9 / maj7#11 |
 
 ## 12. Playing real tunes
 
@@ -457,7 +537,7 @@ Flow is a setting: once on jazz, *every* chord you play without a left key gets 
 CHERD is a pack for Faust's open-field 0.12 (base 30 or later) on an OP-1 Field running **OS 1.7.3+0** (not 1.7.3+1).
 Install open-field with its install page first. Then:
 
-1. Unzip `cherd-37.zip` (check the files against `SHA256SUMS` if you like).
+1. Unzip `cherd-57.zip` (check the files against `SHA256SUMS` if you like).
 2. Put the unit into disk mode and copy `packs/cherd.pack` into the unit's folder **`packs`** (in the bootloader's
    drive mode: `user/pk`).
 3. Leave disk mode, switch the unit off and on.
@@ -511,6 +591,9 @@ read and can go. **Safe start:** hold HELP while you switch the unit on and no p
 | half-diminished | dim + 7th |
 | diminished 7th | dim + add6 |
 | 7sus4 | sus4 + 7th |
+| 9sus4 | sus4 + 9th |
+| minor 6/9 | minor + add9 + add6 |
+| 13 (no ninth) | dom7 + add6 |
 | minor 9th | minor + 9th |
 | sixth / minor sixth | add6 / minor + add6 |
 
@@ -535,4 +618,4 @@ read and can go. **Safe start:** hold HELP while you switch the unit on and no p
 | 3rd | Spread (+ lead) | Human | Gate | comp on / off |
 | 4th | Flow | Comp pattern | Octaves | arp on / off; shift + 4th click keeps the ARP page |
 
-HELP steps back: the kept ARP page, then FEEL. On the main page HELP is TE's own.
+HELP steps back when you let it go: the kept ARP page, then FEEL. On the main page a HELP tap does nothing: on CHERD's page HELP is CHERD's alone. HELP held + a left key locks that flavor (HELP + the key again unlocks); HELP held + a root enters that chord as the chain's next step; HELP held + a click or the 2nd to 4th knob works the chain (chapter 10b).
