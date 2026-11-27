@@ -80,18 +80,33 @@ page. Tap the mixer key (let go within 0.3 s) for the next look; on a look the 1
 name small at the top left; turning its knobs shows one thin line of values at the bottom). With markers 94+, shift +
 a key on a look cues that marker as on the tape screen.
 
-**Pick the one or two looks you like and copy just those plus vu.pack; the zip has all nine to choose from.**
+**Pick the one or two looks you like and copy just those plus vu.pack; the zip has all ten to choose from.** The core
+looks are SUNDOWN, SPECTRUM, CLASSIC, LCD and VU; CONSOLE, BELLA, ANDY, GOOD TIMES and SCOPE are optional extras.
+
+![SUNDOWN (vu_sundown): a synthwave sunset over mirrored mountains made of the bands, on the host with a full mix](packs/vu_sundown/pictures/sundown_vu34.gif)
+
+| | | |
+| --- | --- | --- |
+| ![SPECTRUM](packs/vu_spectrum/pictures/spectrum_vu34.gif) | ![CLASSIC](packs/vu_classic/pictures/classic_vu34.gif) | ![LCD](packs/vu_lcd/pictures/lcd_vu34.gif) |
+| SPECTRUM (core) | CLASSIC (core) | LCD (core) |
+| ![VU](packs/vu_meter/pictures/meter_vu34.gif) | ![CONSOLE](packs/vu_console/pictures/console_vu34.gif) | ![ANDY](packs/vu_andy/pictures/andy_vu34.gif) |
+| VU (core) | CONSOLE (optional) | ANDY (optional) |
+
+All ten looks, three moments each: [packs/vu/pictures/looks_vu34.png](packs/vu/pictures/looks_vu34.png); each look's README has its GIF.
 
 | Pack | Looks | Version |
 | --- | --- | --- |
 | [vu](packs/vu/README.md) (needed) | none of its own: the analysis, the tap, the EQ knobs, the settings | 34 |
-| [vu_spectrum](packs/vu_spectrum/README.md) | SPECTRUM (an LED analyser) and SUNDOWN (a synthwave sunset whose mountains are the bands) | 5 |
+| **core** | | |
+| [vu_sundown](packs/vu_sundown/README.md) | SUNDOWN: a synthwave sunset over mirrored mountains made of the bands (in vu_spectrum until 5) | 1 |
+| [vu_spectrum](packs/vu_spectrum/README.md) | SPECTRUM: an LED analyser | 6 |
 | [vu_classic](packs/vu_classic/README.md) | CLASSIC: thin bars with peak caps, or the wave as dots / lines | 4 |
 | [vu_lcd](packs/vu_lcd/README.md) | LCD: a backlit dot-matrix panel with the tape, the BPM and 30 bars | 5 |
-| [vu_console](packs/vu_console/README.md) | CONSOLE: an old film-and-TV audio console | 4 |
 | [vu_meter](packs/vu_meter/README.md) | VU: two needle meters with PEAK lamps | 4 |
-| [vu_bella](packs/vu_bella/README.md) | BELLA: MARY BELLE the cow dancing on a 90s car stereo's LED panel | 10 |
-| [vu_andy](packs/vu_andy/README.md) | ANDY: an orange tabby in a red 26 jersey who does the Griddy, plops when it goes quiet and MEOWs (our cat, Andruella Robertson) | 8 |
+| **optional** | | |
+| [vu_console](packs/vu_console/README.md) (optional) | CONSOLE: a retro sci-fi computer panel: a rounded frame and colour blocks, pill bars, a radar sweep with blips, scrolling hex, readouts | 4 |
+| [vu_bella](packs/vu_bella/README.md) (optional) | BELLA: MARY BELLE the cow dancing on a 90s car stereo's LED panel | 10 |
+| [vu_andy](packs/vu_andy/README.md) (optional) | ANDY: an orange tabby in a red 26 jersey who does the Griddy, plops when it goes quiet and MEOWs (our cat, Andruella Robertson) | 8 |
 | [vu_goodtimes](packs/vu_goodtimes/README.md) (optional) | GOOD TIMES: a feedback picture kicked by the beats | 3 |
 | [vu_scope](packs/vu_scope/README.md) (optional) | SCOPE: the wave, a goniometer and a phase bar | 3 |
 

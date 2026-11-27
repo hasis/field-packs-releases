@@ -228,16 +228,35 @@
     "categories": [
       "looks"
     ],
-    "description": "Two looks for vu: SPECTRUM, an LED analyser with falling peaks, and SUNDOWN, a synthwave sunset whose mountains are the bands.",
+    "description": "A look for vu: SPECTRUM, an LED analyser with falling peaks.",
     "repository": "https://github.com/hasis/field-packs-releases",
     "path": "packs/vu_spectrum.pack",
     "follow": "main",
-    "version": 5,
+    "version": 6,
     "firmware": "1.7.3",
     "needs": [],
     "folders": [],
     "picture": {
       "path": "packs/vu_spectrum/picture.png"
+    }
+  },
+  {
+    "id": "vu_sundown",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "looks"
+    ],
+    "description": "A look for vu: SUNDOWN, a synthwave sunset over mirrored mountains made of the bands, their water reflection below.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/vu_sundown.pack",
+    "follow": "main",
+    "version": 1,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [],
+    "picture": {
+      "path": "packs/vu_sundown/picture.png"
     }
   },
   {
@@ -285,7 +304,7 @@
     "categories": [
       "looks"
     ],
-    "description": "A look for vu: CONSOLE, an old film-and-TV audio console: pill bars, a sweep with blips, hex columns, readouts, lamps on beats.",
+    "description": "A look for vu: CONSOLE, a retro sci-fi computer panel: elbow frame, colour blocks, pill bars, a radar sweep, scrolling hex, readouts.",
     "repository": "https://github.com/hasis/field-packs-releases",
     "path": "packs/vu_console.pack",
     "follow": "main",

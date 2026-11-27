@@ -13,6 +13,10 @@ nothing (an older vu does not know it).
 
 ## The look
 
+**An optional look:** install it if you like it; the core looks are SUNDOWN, SPECTRUM, CLASSIC, LCD and VU.
+
+![BELLA on the host (vu 34, a full mix)](pictures/bella_vu34.gif)
+
 **vu_bella 2** was vu_mary 1: MARY BELLE's own look is dropped ("bella > mary belle"); her sprites and her dance stay,
 as BELLA's. Delete `vu_mary.pack` from the unit when you put this one on: both together, BELLA comes from vu_bella
 (it sorts first, vu refuses the second BELLA) and vu_mary still adds MARY BELLE.

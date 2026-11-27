@@ -13,6 +13,10 @@ nothing (an older vu does not know it).
 
 ## The look
 
+**A core look.**
+
+![VU on the host (vu 34, a full mix)](pictures/meter_vu34.gif)
+
 - **VU**: a pair of analogue meters for L and R.
   - **Face**: warm, backlit cream and amber, behind bevelled bezels with a glass sheen.
   - **Scale**: an amplitude-linear arc from 20 to 3 VU, unsigned as on old meters: black under 0, red over it. It has

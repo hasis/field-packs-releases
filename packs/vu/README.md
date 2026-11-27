@@ -12,20 +12,37 @@ They show the **master mix** as you hear it (after the master effect), summed: n
 
 **vu 24: a host and one pack per look.** `vu.pack` is the host: the listening stage, the analysis (spectrum, beats,
 levels), the blank page, the mixer key's tap, the flash, the EQ knobs and their strip, the punch hand-off. Each look is
-its own small pack, so put on the unit only the looks you watch (the unit's pack room is full):
+its own small pack, so put on the unit only the looks you watch (the unit's pack room is full). **Core:** SUNDOWN,
+SPECTRUM, CLASSIC, LCD, VU. **Optional:** CONSOLE, BELLA, ANDY, GOOD TIMES, SCOPE.
+
+![SUNDOWN (vu_sundown), a synthwave sunset over mirrored mountains made of the bands: vu 34 on the host, a full mix](../vu_sundown/pictures/sundown_vu34.gif)
+
+| | | |
+| --- | --- | --- |
+| ![SPECTRUM](../vu_spectrum/pictures/spectrum_vu34.gif) | ![CLASSIC](../vu_classic/pictures/classic_vu34.gif) | ![LCD](../vu_lcd/pictures/lcd_vu34.gif) |
+| SPECTRUM (core) | CLASSIC (core) | LCD (core) |
+| ![VU](../vu_meter/pictures/meter_vu34.gif) | ![CONSOLE](../vu_console/pictures/console_vu34.gif) | ![GOOD TIMES](../vu_goodtimes/pictures/goodtimes_vu34.gif) |
+| VU (core) | CONSOLE (optional) | GOOD TIMES (optional) |
+| ![SCOPE](../vu_scope/pictures/scope_vu34.gif) | ![ANDY](../vu_andy/pictures/andy_vu34.gif) | ![BELLA](../vu_bella/pictures/bella_vu34.gif) |
+| SCOPE (optional) | ANDY (optional) | BELLA (optional) |
+
+vu 34 on the host (`previews.py`'s render, a full mix, 2.5 s at 15 fps). All ten looks, three moments each:
+pictures/looks_vu34.png.
+
 
 | Pack | Looks | Room (body + zeroed) | Settings (vu 25: all under settings > packs > vu) |
 | --- | --- | --- | --- |
 | `vu.pack` (needed) | none of its own; a tap says NO LOOKS without look packs | 33 KB | **EQ knobs** on / off, **classic** bars / dots / lines (NOT INSTALLED without vu_classic, vu 34) |
-| [`vu_spectrum.pack`](../vu_spectrum/README.md) | SPECTRUM, SUNDOWN | 3 KB | none |
-| [`vu_classic.pack`](../vu_classic/README.md) | CLASSIC (bars, dots, lines) | 3 KB | vu's **classic** |
-| [`vu_lcd.pack`](../vu_lcd/README.md) | LCD | 4 KB | none |
-| [`vu_console.pack`](../vu_console/README.md) | CONSOLE | 13 KB | none |
-| [`vu_goodtimes.pack`](../vu_goodtimes/README.md) | GOOD TIMES | 30 KB | none |
-| [`vu_meter.pack`](../vu_meter/README.md) | VU | 8 KB | none |
-| [`vu_scope.pack`](../vu_scope/README.md) | SCOPE | 28 KB | none |
-| [`vu_bella.pack`](../vu_bella/README.md) | BELLA (MARY BELLE's own look dropped in vu_bella 2) | 12 KB | none |
-| [`vu_andy.pack`](../vu_andy/README.md) | ANDY | 29 KB | none |
+| [`vu_sundown.pack`](../vu_sundown/README.md) (core) | SUNDOWN (in vu_spectrum until 5) | 2 KB | none |
+| [`vu_spectrum.pack`](../vu_spectrum/README.md) (core) | SPECTRUM | 2 KB | none |
+| [`vu_classic.pack`](../vu_classic/README.md) (core) | CLASSIC (bars, dots, lines) | 3 KB | vu's **classic** |
+| [`vu_lcd.pack`](../vu_lcd/README.md) (core) | LCD | 4 KB | none |
+| [`vu_console.pack`](../vu_console/README.md) (optional) | CONSOLE | 13 KB | none |
+| [`vu_goodtimes.pack`](../vu_goodtimes/README.md) (optional) | GOOD TIMES | 30 KB | none |
+| [`vu_meter.pack`](../vu_meter/README.md) (core) | VU | 8 KB | none |
+| [`vu_scope.pack`](../vu_scope/README.md) (optional) | SCOPE | 28 KB | none |
+| [`vu_bella.pack`](../vu_bella/README.md) (optional) | BELLA (MARY BELLE's own look dropped in vu_bella 2) | 12 KB | none |
+| [`vu_andy.pack`](../vu_andy/README.md) (optional) | ANDY | 29 KB | none |
 
 vu 23 was one pack of ~175 KB holding every look. All of them as packs come to 3 KB more than that (SCOPE now has
 its own phosphor memory; vu 23 borrowed GOOD TIMES'), and any smaller choice is much less.
@@ -44,21 +61,21 @@ its own phosphor memory; vu 23 borrowed GOOD TIMES'), and any smaller choice is 
 | settings > packs > vu | **EQ knobs** on / off | on: the knobs on a look turn TE's master EQ (below); off: they stay TE's volumes |
 | settings > packs > vu | **classic** bars / dots / lines | CLASSIC as the analyser, or the mix's wave in dots or lines (bars at first) |
 | settings > packs > vu | **punch keys** on / off (off at first) | on: with punch 3+ the white keys on a look hold punch's effects; off: they stay TE's keys (vu 27) |
-| settings > packs > vu | **look** OFF / every look installed (base 34+) | the mixer's look, the 4th knob steps through the names in the round's order; a tap of the mixer key changes it here too |
+| settings > packs > vu | **look** OFF / every look installed (a base with option words) | the mixer's look, the 4th knob steps through the names in the round's order; a tap of the mixer key changes it here too |
 
 vu 25: vu's entry is the family's only one under settings > packs; a look pack installed is a look in the round (to drop a look, remove its pack).
 
-vu 26, on base 34 or later: **look** lists OFF and the looks whose packs are installed, by the names they register
+vu 26, on a base with option words (open-field PR #56, pending): **look** lists OFF and the looks whose packs are installed, by the names they register
 (a pack's look is only listed when the pack is there). The base keeps the chosen look by its **name** in
 `user/pf/.options` (`vu/look=SCOPE`), so adding or removing another look pack does not move it; a look whose pack was
-taken off keeps its line, and OFF shows until it is back or you pick another. The first start on base 34 starts on OFF
+taken off keeps its line, and OFF shows until it is back or you pick another. The first start on such a base starts on OFF
 (`look.txt` is not read there).
 
-On an older base, and on Faust's stock base (base 38 and before, which do not have options of words), there is no
+On a base without option words (open-field 0.24 = base 42 and older), there is no
 **look** line and no **classic** line (both are options of words): the base reads EQ knobs and punch keys and leaves the
 rest aside, so nothing breaks; CLASSIC stays bars. The release's `vu.pack` (vu 34) is the unit's build, made with
-tools that keep the options of words (our base 39; upstream as open-field #56): it carries all four (30,824 bytes), and
-look and classic appear on any base with option words. Faust's stock tools leave those two out of the card (30,800
+tools that keep the options of words (open-field PR #56, pending): it carries all four (30,824 bytes), and
+look and classic appear on any base with option words. open-field's stock tools leave those two out of the card (30,800
 bytes, the same code). You
 change the look with a tap of the mixer key, and the last look shown is kept in `user/pf/vu/look.txt` (the looks keep
 vu 23's numbers, so it carries over). At start vu waits up to 2 s for that look's pack to register; if it is away or
@@ -171,7 +188,7 @@ three looks made faster since, as host estimates on the model calibrated on thos
 | Look | Average | Most | Hint |
 | --- | --- | --- | --- |
 | SPECTRUM | 687-689 | 1011-1404 | 689 |
-| SUNDOWN (vu_spectrum 4) | ~600 (host estimate; 1358 on vu_spectrum 3) | ~900 (2426-2440) | 600 |
+| SUNDOWN (vu_spectrum 4, vu_sundown 1) | ~600 (host estimate; 1358 on vu_spectrum 3) | ~900 (2426-2440) | 600 |
 | CLASSIC bars | 415-428 | 871-1739 | 421 |
 | LCD | 910 | 1420-1426 | 910 |
 | CONSOLE (vu_console 3) | ~700 (host estimate; 1053-1319 on vu_console 2) | ~950 (1787-3331) | 700 |

@@ -13,6 +13,10 @@ nothing (an older vu does not know it).
 
 ## The look
 
+**An optional look:** install it if you like it; the core looks are SUNDOWN, SPECTRUM, CLASSIC, LCD and VU.
+
+![SCOPE on the host (vu 34, a full mix)](pictures/scope_vu34.gif)
+
 - **SCOPE**: two CRT screens in green phosphor, an old terminal (inspired by the look, nothing of anyone's): green bezels,
   scanlines, darker curving corners, a slight flicker, labels in the pixel font. Out of phase is shown by a hatched half
   and the words OUT and MONO, not by a hue.

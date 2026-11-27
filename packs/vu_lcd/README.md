@@ -13,6 +13,10 @@ nothing (an older vu does not know it).
 
 ## The look
 
+**A core look.**
+
+![LCD on the host (vu 34, a full mix)](pictures/lcd_vu34.gif)
+
 - **LCD**: a backlit dot-matrix panel of 120 × 54 chunky dots, with the unlit dots visible (vu_lcd 3: the backlight dimmed to about half the light, the lit dots nearly black). The top line scrolls the
   tape, BPM, play state and MASTER MIX. Under it, the tape's time, the tape number and BPM, then 30 bars with peak dots.
 

@@ -13,6 +13,10 @@ nothing (an older vu does not know it).
 
 ## The look
 
+**An optional look:** install it if you like it; the core looks are SUNDOWN, SPECTRUM, CLASSIC, LCD and VU.
+
+![GOOD TIMES on the host (vu 34, a full mix)](pictures/goodtimes_vu34.gif)
+
 - **GOOD TIMES**: a feedback picture at 160 × 72, shown at 3×. Every frame the last one is zoomed, turned and rippled through
   a mesh of 21 × 10 points, blurred a little and faded, then the wave or the bars are drawn into it. A bass beat kicks
   the zoom and the turn, and swaps the colours. The preset changes every 16 s:

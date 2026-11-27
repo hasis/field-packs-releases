@@ -13,6 +13,10 @@ nothing (an older vu does not know it).
 
 ## The look
 
+**An optional look:** install it if you like it; the core looks are SUNDOWN, SPECTRUM, CLASSIC, LCD and VU.
+
+![ANDY on the host (vu 34, a full mix)](pictures/andy_vu34.gif)
+
 **vu_andy 2, in BELLA's universe**: she is drawn as BELLA is, at 3/4 in LED rows (every other row lit, baked so by
 `andy_sprites.py`), her outline a warm grey on black; all her behaviours as before. Her stage is BELLA's floor, a bit
 more soccer: a perspective grid dotted dark green, the far and near touchlines, the halfway line, the front of the
