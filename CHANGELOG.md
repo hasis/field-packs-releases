@@ -1,5 +1,14 @@
 # Changelog
 
+## vu 36, 2026-11-27
+
+`vu-36.zip`: only `vu.pack` is new (34 -> 36; vu 35 was never released), the looks are vu 34's files. **HELP** on the
+mixer's levels page opens a picker of the looks installed (1st knob moves, a click picks, HELP closes; shift + HELP
+stays TUNE's). A **tap of the mixer key** now turns the picked look on and off (OFF = TE's own mixer) instead of
+stepping through the looks. Nothing picked yet: SUNDOWN or the first look installed; the picked look's pack removed:
+the first look installed. On / OFF and the pick come back at the next start (`user/pf/vu/look.txt`, every base); on a
+base with option words, settings > packs > vu > look is the picked look. Upgrade: copy `vu.pack` over the old one.
+
 ## tape views 1, 2026-11-27
 
 The tape screen, in `tape-views-1.zip`: **lanes 98** (waveforms, a height zoom and, new, **tall lanes** on TE's own

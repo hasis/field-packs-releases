@@ -72,10 +72,11 @@ version wrote into `user/synth_presets/<engine>/` stay as they were: delete that
 | --- | --- | --- |
 | ![lilith's face](docs/screenshots/lilith-face.png) | ![the clarinet's face](docs/screenshots/clarinet-face.png) | ![boarder's face](docs/screenshots/boarder-face-chord.png) |
 
-## vu 34: visualizers on the mixer
+## vu 36: visualizers on the mixer
 
-[vu](packs/vu/README.md) (`vu.pack`, version 34) paints the master mix (after the master effect) on TE's mixer levels
-page. Tap the mixer key (let go within 0.3 s) for the next look; on a look the 1st to 4th knobs turn TE's master EQ
+[vu](packs/vu/README.md) (`vu.pack`, version 36) paints the master mix (after the master effect) on TE's mixer levels
+page. **HELP** on the levels page opens a picker of the looks installed (1st knob moves, click picks, HELP closes); a tap
+of the mixer key (let go within 0.3 s) turns the picked look on / off (OFF = TE's own mixer). On a look the 1st to 4th knobs turn TE's master EQ
 (LOW, MID, HIGH, ALL). With punch 3+ and **punch keys** on, the white keys hold punch's effects on a look (the effect's
 name small at the top left; turning its knobs shows one thin line of values at the bottom). With markers 94+, shift +
 a key on a look cues that marker as on the tape screen.
@@ -96,7 +97,7 @@ All ten looks, three moments each: [packs/vu/pictures/looks_vu34.png](packs/vu/p
 
 | Pack | Looks | Version |
 | --- | --- | --- |
-| [vu](packs/vu/README.md) (needed) | none of its own: the analysis, the tap, the EQ knobs, the settings | 34 |
+| [vu](packs/vu/README.md) (needed) | none of its own: the analysis, HELP's picker, the tap, the EQ knobs, the settings | 36 |
 | **core** | | |
 | [vu_sundown](packs/vu_sundown/README.md) | SUNDOWN: a synthwave sunset over mirrored mountains made of the bands (in vu_spectrum until 5) | 1 |
 | [vu_spectrum](packs/vu_spectrum/README.md) | SPECTRUM: an LED analyser | 6 |
@@ -111,9 +112,10 @@ All ten looks, three moments each: [packs/vu/pictures/looks_vu34.png](packs/vu/p
 | [vu_scope](packs/vu_scope/README.md) (optional) | SCOPE: the wave, a goniometer and a phase bar | 3 |
 
 Settings under settings > packs > vu: **EQ knobs** (on) and **punch keys** (off; with punch 3 the white keys hold its
-effects on a look). The look you leave on is kept in `user/pf/vu/look.txt`. **look** (the look by name) and **classic** (CLASSIC's
+effects on a look). On / OFF and the picked look are kept in `user/pf/vu/look.txt` (every base). **look** (the picked look) and **classic** (CLASSIC's
 style: bars / dots / lines) appear in settings on bases with option words (open-field PR #56, pending); on
-other bases those two rows don't show, the mixer key's tap switches looks and CLASSIC draws bars.
+other bases those two rows don't show, HELP's picker picks the look and CLASSIC draws bars.
+The looks are vu 34's (the same files); upgrading from vu 34: copy the new `vu.pack` over the old one.
 The tap does not clash with Faust's sidechain (shift + mixer).
 
 ## tape views 1: lanes, markers, PERFORM, punch-in effects, looks, MIDI tracks
@@ -174,7 +176,7 @@ copy its three files over the old ones.
 1. **Requirements:** an OP-1 Field on **OS 1.7.3** (the +0 and +1 releases both work) with open-field installed by Faust's install page
    (it puts the loader and `base.pack` on the unit; open-field's `docs/guide.md`): open-field 0.24 (base 42) with
    loader N1 or N2, or an older base from 38. Nothing else. The packs are built with open-field's stock tools.
-2. Download `fx-1.3.zip`, `cherd-57.zip`, `recstart-13.zip`, `engines-2.zip`, `vu-34.zip` and / or `tape-views-1.zip` from this repository's **Releases** and unzip it (check the files
+2. Download `fx-1.3.zip`, `cherd-57.zip`, `recstart-13.zip`, `engines-2.zip`, `vu-36.zip` and / or `tape-views-1.zip` from this repository's **Releases** and unzip it (check the files
    against `SHA256SUMS` if you like); each zip's own README.md says what is in it. Or take the `.pack` files from
    [`packs/`](packs) here.
 3. Put the unit into disk mode and copy the `.pack` files into the unit's folder **`packs`** (in the bootloader's drive

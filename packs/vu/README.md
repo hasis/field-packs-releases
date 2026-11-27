@@ -32,7 +32,7 @@ pictures/looks_vu34.png.
 
 | Pack | Looks | Room (body + zeroed) | Settings (vu 25: all under settings > packs > vu) |
 | --- | --- | --- | --- |
-| `vu.pack` (needed) | none of its own; a tap says NO LOOKS without look packs | 33 KB | **EQ knobs** on / off, **classic** bars / dots / lines (NOT INSTALLED without vu_classic, vu 34) |
+| `vu.pack` (needed) | none of its own; a tap says NO LOOKS without look packs | 36 KB | **EQ knobs** on / off, **punch keys** on / off, **classic** bars / dots / lines (NOT INSTALLED without vu_classic, vu 34), **look** (the picked look) |
 | [`vu_sundown.pack`](../vu_sundown/README.md) (core) | SUNDOWN (in vu_spectrum until 5) | 2 KB | none |
 | [`vu_spectrum.pack`](../vu_spectrum/README.md) (core) | SPECTRUM | 2 KB | none |
 | [`vu_classic.pack`](../vu_classic/README.md) (core) | CLASSIC (bars, dots, lines) | 3 KB | vu's **classic** |
@@ -57,29 +57,39 @@ its own phosphor memory; vu 23 borrowed GOOD TIMES'), and any smaller choice is 
 
 | Where | What | Does |
 | --- | --- | --- |
-| mixer, levels page already up | **tap the mixer key** (release within 0.3 s) | the next look that is installed: OFF → SPECTRUM → SUNDOWN → CLASSIC → LCD → CONSOLE → GOOD TIMES → BELLA → ANDY → VU → SCOPE → OFF; the name shows small at the top left for 1 s (vu 28; the centre stays free). **NO LOOKS** with no look pack installed |
+| mixer, levels page already up | **HELP** (vu 35) | the picker: every look installed in two columns (SUNDOWN, SPECTRUM, CLASSIC, LCD, CONSOLE, GOOD TIMES, BELLA, ANDY, VU, SCOPE), the picked look marked with a dot; **1st knob** moves the box, a **click** picks that look, shows it and closes, **HELP** again (or a tap of the mixer key) closes. shift + HELP stays tune's |
+| mixer, levels page already up | **tap the mixer key** (release within 0.3 s) | vu 36: **OFF (TE's mixer) ↔ the picked look**, nothing else (no stepping through the looks). Nothing picked yet: the first installed (SUNDOWN when it is there); the picked look's pack removed: the first installed; the name shows small at the top left for 1 s. **NO LOOKS** with no look pack installed (TE's mixer stays) |
+| mixer, levels page up | hold the mixer key | TE's (and 8 tracks' page of tracks 5-8): a hold is never a tap |
 | settings > packs > vu | **EQ knobs** on / off | on: the knobs on a look turn TE's master EQ (below); off: they stay TE's volumes |
 | settings > packs > vu | **classic** bars / dots / lines | CLASSIC as the analyser, or the mix's wave in dots or lines (bars at first) |
 | settings > packs > vu | **punch keys** on / off (off at first) | on: with punch 3+ the white keys on a look hold punch's effects; off: they stay TE's keys (vu 27) |
-| settings > packs > vu | **look** OFF / every look installed (a base with option words) | the mixer's look, the 4th knob steps through the names in the round's order; a tap of the mixer key changes it here too |
+| settings > packs > vu | **look**: every look installed (a base with option words) | the picked look (vu 36: no OFF here, the tap is OFF), as HELP's picker; the picker changes it here too |
 
 vu 25: vu's entry is the family's only one under settings > packs; a look pack installed is a look in the round (to drop a look, remove its pack).
 
-vu 26, on a base with option words (open-field PR #56, pending): **look** lists OFF and the looks whose packs are installed, by the names they register
+**vu 36: pick one look, the tap switches it on and off.** HELP on the mixer (or settings' **look**) picks the look;
+the mixer key's tap goes OFF ↔ that look. vu keeps on / OFF and the picked look in `user/pf/vu/look.txt` on every base
+(two characters, `'0' + number`; vu 35's one character is still read), so both come back at the next start. vu 35's
+**in rotation** switch and `user/pf/vu/rotation.txt` are gone: an old `rotation.txt` is ignored (a pack cannot delete a
+file; delete it by hand if you like). To drop a look for good, remove its pack.
+
+![HELP's picker on the host (vu 36): the looks only, LCD chosen, ANDY picked](pictures/picker_vu36.png)
+
+vu 26, on a base with option words (open-field PR #56, pending): **look** lists the looks whose packs are installed (vu 26-35: OFF too), by the names they register
 (a pack's look is only listed when the pack is there). The base keeps the chosen look by its **name** in
 `user/pf/.options` (`vu/look=SCOPE`), so adding or removing another look pack does not move it; a look whose pack was
-taken off keeps its line, and OFF shows until it is back or you pick another. The first start on such a base starts on OFF
-(`look.txt` is not read there).
+taken off keeps its line until it is back or you pick another (vu 36: meanwhile the tap shows the first installed).
+vu 36 reads `look.txt` on these bases too (on / OFF; vu 26-35 did not), and settings' **look** follows the picked look.
 
 On a base without option words (open-field 0.24 = base 42 and older), there is no
 **look** line and no **classic** line (both are options of words): the base reads EQ knobs and punch keys and leaves the
-rest aside, so nothing breaks; CLASSIC stays bars. The release's `vu.pack` (vu 34) is the unit's build, made with
-tools that keep the options of words (open-field PR #56, pending): it carries all four (30,824 bytes), and
+rest aside, so nothing breaks; CLASSIC stays bars. The release's `vu.pack` (vu 36) is the unit's build, made with
+tools that keep the options of words (open-field PR #56, pending): it carries all four (34,592 bytes), and
 look and classic appear on any base with option words. open-field's stock tools leave those two out of the card (30,800
 bytes, the same code). You
-change the look with a tap of the mixer key, and the last look shown is kept in `user/pf/vu/look.txt` (the looks keep
-vu 23's numbers, so it carries over). At start vu waits up to 2 s for that look's pack to register; if it is away or
-switched off, the next look that is on comes.
+pick the look with HELP's picker and switch it with a tap of the mixer key; on / OFF and the picked look are kept in
+`user/pf/vu/look.txt` (the looks keep vu 23's numbers, so it carries over). At start vu waits up to 2 s for that look's
+pack to register; if it is away, the tap shows the first look installed.
 
 **From vu 23**: install `vu.pack` 24 (it replaces vu 23: same pack, higher version) and the look packs you want. The
 look settings start fresh, all on: vu 23's `vu/spectrum`, `vu/extra cow mode` and the rest are not read (the look

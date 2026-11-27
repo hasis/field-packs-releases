@@ -204,11 +204,11 @@
       "looks",
       "mixer"
     ],
-    "description": "vu: audio visualizers on the mixer, of the master mix. Tap the mixer key for the next look; knobs turn TE's master EQ. Needs a look pack.",
+    "description": "vu: visualizers of the master mix on the mixer. HELP picks a look, a tap of the mixer key turns it on / off. Needs a look pack.",
     "repository": "https://github.com/hasis/field-packs-releases",
     "path": "packs/vu.pack",
     "follow": "main",
-    "version": 34,
+    "version": 36,
     "firmware": "1.7.3",
     "needs": [],
     "folders": [
