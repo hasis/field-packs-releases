@@ -1,5 +1,14 @@
 # Changelog
 
+## fx 1.4, 2026-11-27
+
+A hotfix: **snowtrain 24**. Changing a tape track's wagon (for example a delay to another effect, or to none) could buzz
+loudly and restart or freeze the unit; every snowtrain since 10 had it, fx 1.3's snowtrain 20 too. A wagon's effect now
+runs only on its own values, and a new effect's values are in place before it starts. Also in snowtrain 24 (from 21 and
+22): a pack engine past the 32nd pack file shows its name on the locomotive (loader N2), and on a track's train T1..T4
+step to track 1..4's (the shown track's key again: 5..8); a track's train opened with keys held stays up. wagons 18 and
+TUNE 29 are fx 1.3's files. Upgrade: copy `snowtrain.pack` over the old one.
+
 ## vu 36, 2026-11-27
 
 `vu-36.zip`: only `vu.pack` is new (34 -> 36; vu 35 was never released), the looks are vu 34's files. **HELP** on the

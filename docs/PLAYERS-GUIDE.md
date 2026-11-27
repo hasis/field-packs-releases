@@ -1,6 +1,6 @@
 # OP-1 Field: Player's Guide to field-packs
 
-Everything the released packs add to the OP-1 Field, and how to play them: OS 1.7.3 (+0 or +1) with Faust's open-field. **fx 1.3** (next: snowtrain, wagons with BEIGNET, TUNE) is section 3; **CHERD 55** (cherd 55; named after the pack's version, as CHERD 37 was), its own release with its own [manual](../packs/cherd/MANUAL.md), is section 2; **engines 2** (native synth engines, each with its own manual: [lilith](../packs/lilith/MANUAL.md), the [clarinet](../packs/clarinet/MANUAL.md) and [boarder](../packs/boarder/MANUAL.md)) is sections 4 to 6; **recstart 1** is section 7; **seq 1** (seqx, seqbank) is section 8; **vu 34** (the mixer's visualizers, named after vu.pack's version) is section 9; **tape views 1** (the tape screen: lanes, markers, perform, punch, themes and its looks, miditracks) is section 10. Where a feature needs one of our forks of Faust's platform packs (fx train 18+, 8 tracks 13), the text says so; everything else runs on Faust's stock open-field. Pack versions: the [README](../README.md). Gestures were checked against each pack's input code (flash words are quoted as the code prints them).
+Everything the released packs add to the OP-1 Field, and how to play them: OS 1.7.3 (+0 or +1) with Faust's open-field. **fx 1.4** (snowtrain, wagons with BEIGNET, TUNE) is section 3; **CHERD 55** (cherd 55; named after the pack's version, as CHERD 37 was), its own release with its own [manual](../packs/cherd/MANUAL.md), is section 2; **engines 2** (native synth engines, each with its own manual: [lilith](../packs/lilith/MANUAL.md), the [clarinet](../packs/clarinet/MANUAL.md) and [boarder](../packs/boarder/MANUAL.md)) is sections 4 to 6; **recstart 1** is section 7; **seq 1** (seqx, seqbank) is section 8; **vu 34** (the mixer's visualizers, named after vu.pack's version) is section 9; **tape views 1** (the tape screen: lanes, markers, perform, punch, themes and its looks, miditracks) is section 10. Where a feature needs one of our forks of Faust's platform packs (fx train 18+, 8 tracks 13), the text says so; everything else runs on Faust's stock open-field. Pack versions: the [README](../README.md). Gestures were checked against each pack's input code (flash words are quoted as the code prints them).
 
 **How to read the gestures**
 
@@ -87,7 +87,7 @@ Everything the released packs add to the OP-1 Field, and how to play them: OS 1.
 **Install** open-field first (0.24, base 42, with loader N1 or N2; older bases from 38 work too), with its install page ([open-field](https://github.com/LaP0573/open-field), `docs/guide.md`). Then take the packs you want:
 
 - **With the install page's packs section**, once these packs are in its catalog.
-- **fx 1.3 / CHERD 57 / engines 2 / recstart 13 / vu 34:** download `fx-1.3.zip`, `cherd-57.zip`, `engines-2.zip`, `recstart-13.zip` or `vu-34.zip` from [the releases repository](https://github.com/hasis/field-packs-releases/releases), unzip, and copy the `.pack` files from its `packs/` folder (each zip's README says what is in it). Coming from fx 1.2: replace wagons.pack and delete `beignet.pack` (BEIGNET is in wagons 18). Coming from fx 1.1: replace snowtrain.pack and wagons.pack too. Coming from fx 1.0: delete `autotune.pack` (TUNE is `tune.pack` now; with both there the loader keeps `autotune.pack` and leaves `tune.pack` out).
+- **fx 1.4 / CHERD 57 / engines 2 / recstart 13 / vu 34:** download `fx-1.4.zip`, `cherd-57.zip`, `engines-2.zip`, `recstart-13.zip` or `vu-34.zip` from [the releases repository](https://github.com/hasis/field-packs-releases/releases), unzip, and copy the `.pack` files from its `packs/` folder (each zip's README says what is in it). Coming from fx 1.3: replace snowtrain.pack (snowtrain 24 fixes a freeze when a tape track's wagon changes). Coming from fx 1.2: replace wagons.pack and delete `beignet.pack` (BEIGNET is in wagons 18). Coming from fx 1.1: replace snowtrain.pack and wagons.pack too. Coming from fx 1.0: delete `autotune.pack` (TUNE is `tune.pack` now; with both there the loader keeps `autotune.pack` and leaves `tune.pack` out).
 - **By hand:** put the unit into disk mode, copy the `.pack` files (from the release zip, or built) into the folder `packs`, leave disk mode, switch the unit off and on. In the bootloader's drive mode the folder is `user/pk`. To take a pack away, delete its file there.
 
 **Safe start.** Hold **HELP** while you power on. No packs load. Use this when a pack stops the unit from starting; the disk mode still shows the folder `packs`, so you can delete or replace the file.
@@ -163,7 +163,7 @@ for the unit, `user/pf/cherd/chains.bin`. Details: [MANUAL.md, chapter 10b](../p
 
 ## 3. The fx packs: snowtrain, wagons (with BEIGNET), TUNE
 
-The **fx** release (fx 1.3, next): three effect packs that work together (BEIGNET, beignet.pack in fx 1.2, is in wagons
+The **fx** release (fx 1.4): three effect packs that work together (BEIGNET, beignet.pack in fx 1.2, is in wagons
 18; upgrading: delete beignet.pack), on Faust's stock open-field and on ours. GATE,
 FREEZE and TUNE follow CHERD's chord when CHERD (section 2) is installed.
 

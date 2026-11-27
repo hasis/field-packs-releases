@@ -10,7 +10,7 @@
     "repository": "https://github.com/hasis/field-packs-releases",
     "path": "packs/snowtrain.pack",
     "follow": "main",
-    "version": 20,
+    "version": 24,
     "firmware": "1.7.3",
     "needs": [],
     "folders": [

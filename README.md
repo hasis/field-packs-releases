@@ -3,15 +3,17 @@
 Packs for the **OP-1 Field** on **OS 1.7.3** (the +0 and +1 releases both work) with Faust's [open-field](https://github.com/LaP0573/open-field), by
 hasis. This repository holds the released pack files only (no sources). Six releases:
 
-## fx 1.3: three effect packs
+## fx 1.4: three effect packs
 
 | Pack | What it does | Version |
 | --- | --- | --- |
-| [snowtrain](packs/snowtrain/README.md) | A light fx train: on each synth and drum sound, TE's T3 effect plus three pack effects as wagons; trains on tape tracks too. Presets. A click on a pack effect's wagon opens its values page. | 20 |
+| [snowtrain](packs/snowtrain/README.md) | A light fx train: on each synth and drum sound, TE's T3 effect plus three pack effects as wagons; trains on tape tracks too. Presets. A click on a pack effect's wagon opens its values page. | 24 |
 | [wagons](packs/wagons/README.md) | Seven effects in TE's own effect lists: BOOST, GATE, FREEZE, TAPE, JUNEAUX, ROTARY (a rotary speaker cabinet) and BEIGNET (a mastering sweetener: glue, tone, width, loud, a -1 dBFS limiter; presets). | 18 |
 | [TUNE](packs/tune/README.md) (`tune.pack`) | Pitch correction on the live input (shift + HELP) with harmonies, and a TUNE effect. | 29 |
 
-Upgrading from fx 1.2: copy `wagons.pack` and delete `beignet.pack` (BEIGNET now lives in wagons; saved sounds and presets keep working).
+**Upgrading from fx 1.3: copy the new `snowtrain.pack` over the old one.** fx 1.4 is a hotfix: changing a tape track's wagon (for example a delay to another effect, or to none) could buzz loudly and restart or freeze the unit. wagons 18 and TUNE 29 are fx 1.3's files.
+
+Upgrading from fx 1.2: also copy `wagons.pack` and delete `beignet.pack` (BEIGNET now lives in wagons; saved sounds and presets keep working).
 
 GATE, FREEZE and TUNE follow CHERD's chord when CHERD is installed.
 
@@ -176,7 +178,7 @@ copy its three files over the old ones.
 1. **Requirements:** an OP-1 Field on **OS 1.7.3** (the +0 and +1 releases both work) with open-field installed by Faust's install page
    (it puts the loader and `base.pack` on the unit; open-field's `docs/guide.md`): open-field 0.24 (base 42) with
    loader N1 or N2, or an older base from 38. Nothing else. The packs are built with open-field's stock tools.
-2. Download `fx-1.3.zip`, `cherd-57.zip`, `recstart-13.zip`, `engines-2.zip`, `vu-36.zip` and / or `tape-views-1.zip` from this repository's **Releases** and unzip it (check the files
+2. Download `fx-1.4.zip`, `cherd-57.zip`, `recstart-13.zip`, `engines-2.zip`, `vu-36.zip` and / or `tape-views-1.zip` from this repository's **Releases** and unzip it (check the files
    against `SHA256SUMS` if you like); each zip's own README.md says what is in it. Or take the `.pack` files from
    [`packs/`](packs) here.
 3. Put the unit into disk mode and copy the `.pack` files into the unit's folder **`packs`** (in the bootloader's drive

@@ -2,8 +2,8 @@
 
 **A light fx train.** A train on the synth, the drum and each tape track: the locomotive is the sound (SYNTH 3, DRUM 1)
 or the track (TRACK 2), then four wagons. On a sound, wagon 1 is TE's own T3 effect and wagons 2 to 4 are any pack
-effects on the unit (wagons, beignet, TUNE, anyone's level-8 effect). On a tape track all four are TE's effects. Knob N
-is the wagon drawn above it. Part of the **fx 1** release.
+effects on the unit (wagons with BEIGNET, TUNE, anyone's level-8 effect). On a tape track all four are TE's effects. Knob N
+is the wagon drawn above it. Part of the **fx** release (snowtrain 24 in fx 1.4; snowtrain 20 in fx 1.2 and 1.3).
 
 | ![the train](pictures/train.png) | ![a wagon's values](pictures/values.png) |
 |---|---|
@@ -11,11 +11,12 @@ is the wagon drawn above it. Part of the **fx 1** release.
 
 (Renders by the pack's own drawing code, `check.sh`; the unit draws the same faceplate.)
 
-Version 17, level 8, OP-1 Field OS 1.7.3 (+0 or +1), open-field 0.12 or later (Faust's stock base 32 or ours).
+Version 24, level 8, OP-1 Field OS 1.7.3 (the +0 and +1 releases both work), open-field 0.24 (base 42) with loader N1 or N2, or an older base from 38.
 
 ## In short
 
-- **Open:** T3 on a synth or drum screen. On the mixer, **shift + the Nth knob's click** opens track N's train.
+- **Open:** T3 on a synth or drum screen. On the mixer, **shift + the Nth knob's click** opens track N's train; on a
+  track's train **T1..T4** step to track 1..4's, the shown track's key again to 5..8 (T1 on track 1: track 5).
 - **Turn** a knob: pick that wagon's effect. **Click**: its values. **Hold**: on / off. **Shift + turn**: move it.
 - **HELP**: presets (`user/pf/snowtrain/`, 16 factory chains on the first start).
 - **Settings:** none. The chain is kept with each sound (and the sound's presets); a track's train with its tape.
@@ -23,7 +24,7 @@ Version 17, level 8, OP-1 Field OS 1.7.3 (+0 or +1), open-field 0.12 or later (F
   install page once it is listed. **Not beside fx train**: take fx train off (both use the same two places; the loader
   keeps fx train and leaves snowtrain out).
 
-### On Faust's stock base and 8 tracks (fx 1)
+### On a stock base and 8 tracks (fx 1)
 
 - **NO MEMORY on a wagon:** the stock base keeps one memory record for every effect ever picked into each wagon, until
   the unit restarts. snowtrain only makes a new one once the knob has rested 0.7 s, so scrolling past names costs
