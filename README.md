@@ -1,7 +1,7 @@
 # field-packs releases
 
 Packs for the **OP-1 Field** on **OS 1.7.3** (the +0 and +1 releases both work) with Faust's [open-field](https://github.com/LaP0573/open-field), by
-hasis. This repository holds the released pack files only (no sources). Five releases and one pre-release:
+hasis. This repository holds the released pack files only (no sources). Six releases:
 
 ## fx 1.3: three effect packs
 
@@ -116,21 +116,65 @@ style: bars / dots / lines) appear in settings on bases with option words (open-
 other bases those two rows don't show, the mixer key's tap switches looks and CLASSIC draws bars.
 The tap does not clash with Faust's sidechain (shift + mixer).
 
-## Experimental: lanes 87 (pre-release)
+## tape views 1: lanes, markers, PERFORM, punch-in effects, looks, MIDI tracks
 
-Waveforms and a vertical zoom on the Field's own tape screen: `waveform` on in settings > PACKS > LANES, then hold
-**HELP** and turn the **4th knob** for 8 / 4 / 2 / 1 lanes. Optional: `markers.pack` + `perform.pack` (attached too) add a
-plain PERFORM page (parts list, cues, countdown) on the 4th click. Not yet: punch-ins and the 89MPH / CONSOLE looks. Download it from the
-[lanes 87 pre-release](https://github.com/hasis/field-packs-releases/releases/tag/lanes-87-experimental), and please
-[open an issue](https://github.com/hasis/field-packs-releases/issues/new) with anything odd: what you did, a photo of
-the screen, your open-field version and other packs.
+Packs for the **tape screen**. Take the ones for what you want:
+
+| You want | Copy |
+| --- | --- |
+| TE's tape screen with waveforms, a height zoom and tall lanes | `lanes.pack` |
+| Markers: set, name, cue, jump, loop the parts of a song | `markers.pack` |
+| + the PERFORM face (a set list, a song arranger) and punch-in effects | + `perform.pack`, `punch.pack` |
+| + a look for the tape screen, the PERFORM face and the mixer | + `themes.pack` and **one** look (`theme_89mph.pack` or `theme_console.pack`) |
+| MIDI tracks on the tape | `miditracks.pack` (its insert browser needs `seqbank.pack` 20, in the seq 20 release) |
+
+| Pack | What it does | Version |
+| --- | --- | --- |
+| [lanes](packs/lanes/README.md) | Waveforms in TE's clip bars; HELP + 4th turn: 8 / 4 / 2 / 1 tracks; **tall lanes** (settings, off at first): tall lanes on TE's own tape screen, TE's deck small in the centre, the timecode top right (not with a theme on the tape screen; with markers its flags hang above the moved ruler). | 98 |
+| [markers](packs/markers/README.md) | Up to 16 markers a tape: set, name, cue, jump, loop, move a section. Needs nothing else. | 96 |
+| [perform](packs/perform/README.md) | The 4th knob's click: PERFORM, the markers as a set list; the song arranger and its EDIT. **Needs markers.** | 6 |
+| [punch](packs/punch/README.md) | 14 punch-in effects held on the white keys on the PERFORM face. | 3 |
+| [themes](packs/themes/README.md) | Draws the tape screen, the PERFORM face and the mixer in a look. **Needs a look.** | 11 |
+| [theme_89mph](packs/theme_89mph/README.md) | The look 89MPH: a car head unit's segment readouts and dot-matrix lanes; the mixer too. Needs themes. | 5 |
+| [theme_console](packs/theme_console/README.md) | The look CONSOLE: an elbow header and pill lanes. Needs themes. | 6 |
+| [miditracks](packs/miditracks/README.md) | Any tape track can be a MIDI track: record notes, play them to the synth, the drum, MIDI out; PUNCH lanes. Needs nothing else. | 47 |
+
+Every pack works alone except perform (needs markers) and a look (needs themes); each one that is there adds to the
+others (flags and notes drawn in a look, effects on the face, PUNCH lanes, ...).
+
+**Works with / without** (each pack loaded alone with the base, checked with the loader's simulation on Faust's stock
+base 42 and on a base with #55 / #56, with and without 8 tracks):
+
+| Pack | Needs | Without ... |
+| --- | --- | --- |
+| lanes | nothing | markers: no flags (lanes then does the time zoom, HELP + 2nd turn, itself); miditracks: no notes; 8 tracks: 4 lanes. Tall lanes stay off under a theme; with markers the flags hang above the moved ruler |
+| markers | nothing | lanes / themes: flags in TE's own layout; perform: no song; punch: program changes go on to TE; 8 tracks: a 4-track tape (moves carry tracks 5-8 only with 8 tracks) |
+| perform | **markers** (does not load without it) | themes: its own plain face; punch: no effects on the face |
+| punch | nothing to load, but **perform or vu to play**: the keys work on perform's face (plain or in a look) or on a vu look with vu's **punch keys** on, not on TE's mixer page | perform and vu: only a PUNCH lane (miditracks) plays the effects; program changes count only while a face is up |
+| themes | **one look** (theme_89mph or theme_console) | a look: TE's screens; lanes: no waveform, no height zoom; markers: no flags, sections or cue; perform: no face |
+| theme_89mph, theme_console | **themes** (alone they load and do nothing) | |
+| miditracks | nothing: **any** tape track can be a MIDI track (1-4 too; shift + 4th click) | 8 tracks: tracks 1-4 only (8 tracks adds 5-8; with our 8 tracks 13 / 14 they also follow the mixer's mutes, with Faust's 8 tracks they can't be muted); lanes: draws its notes itself; seqbank: no insert browser; punch: a PUNCH track is silent |
+
+**On Faust's stock base (open-field 42), two things differ:**
+- **No theme setting.** That base does not show settings with words, so the look is **on whenever it is installed**:
+  the look packs you copy decide it. Install **one** look; to get TE's screen back, remove themes.pack.
+- **Files kept per tape don't follow TE's tape copy and delete.** The base doesn't copy or remove lanes' waveforms
+  (`user/pf/lanes/`; a copy's waveform fills in again as it plays) or `user/pf/miditracks/tape<N>.mtk`. miditracks catches a copy itself once the original tape has been loaded with it
+  installed (a tape copied before that starts empty); a deleted tape's file stays until a new tape takes its number.
+
+On a base with Faust's open-field pull requests #55 (files per tape) and #56 (options of words), offered to him and not
+part of this release, settings > PACKS > themes > **theme** picks off / 89MPH / CONSOLE and the files follow copy and
+delete. markers, perform and punch keep their data inside the tape: they follow copies on any base.
+
+tape views 1 replaces the [lanes 87 pre-release](https://github.com/hasis/field-packs-releases/releases/tag/lanes-87-experimental):
+copy its three files over the old ones.
 
 ## Install
 
 1. **Requirements:** an OP-1 Field on **OS 1.7.3** (the +0 and +1 releases both work) with open-field installed by Faust's install page
    (it puts the loader and `base.pack` on the unit; open-field's `docs/guide.md`): open-field 0.24 (base 42) with
    loader N1 or N2, or an older base from 38. Nothing else. The packs are built with open-field's stock tools.
-2. Download `fx-1.3.zip`, `cherd-57.zip`, `recstart-13.zip`, `engines-2.zip` and / or `vu-34.zip` from this repository's **Releases** and unzip it (check the files
+2. Download `fx-1.3.zip`, `cherd-57.zip`, `recstart-13.zip`, `engines-2.zip`, `vu-34.zip` and / or `tape-views-1.zip` from this repository's **Releases** and unzip it (check the files
    against `SHA256SUMS` if you like); each zip's own README.md says what is in it. Or take the `.pack` files from
    [`packs/`](packs) here.
 3. Put the unit into disk mode and copy the `.pack` files into the unit's folder **`packs`** (in the bootloader's drive

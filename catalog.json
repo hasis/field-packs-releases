@@ -410,5 +410,188 @@
     "picture": {
       "path": "packs/vu_scope/picture.png"
     }
+  },
+  {
+    "id": "lanes",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "tape",
+      "looks"
+    ],
+    "description": "lanes: waveforms in the tape screen's clips, a height zoom (HELP + 4th knob) and tall lanes, in TE's own look.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/lanes.pack",
+    "follow": "main",
+    "version": 98,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [
+      {
+        "name": "lanes",
+        "place": "lanes"
+      }
+    ],
+    "picture": {
+      "path": "packs/lanes/picture.png"
+    }
+  },
+  {
+    "id": "themes",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "looks",
+      "tape"
+    ],
+    "description": "themes: draws the tape screen, the PERFORM face and the mixer in a look. Needs a look pack: theme_89mph or theme_console.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/themes.pack",
+    "follow": "main",
+    "version": 11,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [],
+    "picture": {
+      "path": "packs/themes/picture.png"
+    }
+  },
+  {
+    "id": "theme_89mph",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "looks"
+    ],
+    "description": "A look for themes: 89MPH, a car head unit's segment readouts and dot-matrix lanes on the tape screen, the face and the mixer.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/theme_89mph.pack",
+    "follow": "main",
+    "version": 5,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [],
+    "picture": {
+      "path": "packs/theme_89mph/picture.png"
+    }
+  },
+  {
+    "id": "theme_console",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "looks"
+    ],
+    "description": "A look for themes: CONSOLE, an elbow header and pill lanes on the tape screen, a set list on the PERFORM face.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/theme_console.pack",
+    "follow": "main",
+    "version": 6,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [],
+    "picture": {
+      "path": "packs/theme_console/picture.png"
+    }
+  },
+  {
+    "id": "perform",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "tape"
+    ],
+    "description": "perform: the 4th knob's click flips the tape screen to PERFORM, the markers as a set list, and a song arranger. Needs markers.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/perform.pack",
+    "follow": "main",
+    "version": 6,
+    "firmware": "1.7.3",
+    "needs": [
+      "markers"
+    ],
+    "folders": [
+      {
+        "name": "perform",
+        "place": "perform"
+      }
+    ],
+    "picture": {
+      "path": "packs/perform/picture.png"
+    }
+  },
+  {
+    "id": "punch",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "effects",
+      "tape"
+    ],
+    "description": "punch: 14 punch-in effects (LP, HP, JET, CRUSH, GATE, DUB, VERB, STUTR ...) held on the white keys on the PERFORM face.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/punch.pack",
+    "follow": "main",
+    "version": 3,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [
+      {
+        "name": "punch",
+        "place": "punch"
+      }
+    ],
+    "picture": {
+      "path": "packs/punch/picture.png"
+    }
+  },
+  {
+    "id": "markers",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "tape"
+    ],
+    "description": "markers: up to 16 markers on the tape, one a key: set, name, cue, jump, loop a section, move a section. Kept in the tape.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/markers.pack",
+    "follow": "main",
+    "version": 96,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [
+      {
+        "name": "markers",
+        "place": "markers"
+      }
+    ],
+    "picture": {
+      "path": "packs/markers/picture.png"
+    }
+  },
+  {
+    "id": "miditracks",
+    "author": "hasis",
+    "status": "listed",
+    "categories": [
+      "tape",
+      "sequencing"
+    ],
+    "description": "miditracks: any tape track can be a MIDI track: record notes against the tape, play them to the synth, the drum or MIDI out.",
+    "repository": "https://github.com/hasis/field-packs-releases",
+    "path": "packs/miditracks.pack",
+    "follow": "main",
+    "version": 47,
+    "firmware": "1.7.3",
+    "needs": [],
+    "folders": [
+      {
+        "name": "miditracks",
+        "place": "miditracks"
+      }
+    ],
+    "picture": {
+      "path": "packs/miditracks/picture.png"
+    }
   }
 ]

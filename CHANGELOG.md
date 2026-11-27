@@ -1,5 +1,16 @@
 # Changelog
 
+## tape views 1, 2026-11-27
+
+The tape screen, in `tape-views-1.zip`: **lanes 98** (waveforms, a height zoom and, new, **tall lanes** on TE's own
+tape screen: settings > PACKS > lanes, off at first; TE's deck small in the centre, the timecode top right; with markers too), **markers 96** (markers: set, name, cue, jump,
+loop, move; a new tape no longer takes an old tape's markers; over tall lanes its flags hang above the moved ruler), **perform 6** (the PERFORM face and the song arranger), **punch 3** (14
+punch-in effects on the white keys), **themes 11** with the looks **theme_89mph 5** (89MPH) and **theme_console 6**
+(CONSOLE; TE's count-in shows in the look), **miditracks 47** (MIDI tracks on the tape, outputs MIDI / SYNTH / DRUM /
+BOTH / PUNCH; CHERD's chains onto a MIDI track). On open-field's stock base there is no theme setting (the look
+installed is on) and the files kept per tape don't follow TE's copy and delete. Replaces the pre-release
+lanes-87-experimental.
+
 ## vu 34, 2026-11-26
 
 The first vu release: the mixer's visualizers, in `vu-34.zip`, named after `vu.pack`'s version. **vu 34** (`vu.pack`) is
