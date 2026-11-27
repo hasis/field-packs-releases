@@ -22,5 +22,5 @@ SOFTWARE.
 
 Field Sans, the glyphs rasterized for cherd.pack from Petaluma Script, is under the
 SIL Open Font License 1.1 (packs/cherd/font/OFL.txt, FONTLOG.txt). CHERD's chord
-engine comes from the OP-XY Cherd machine, MIT, Copyright (c) 2026 Open-XY
-contributors. See NOTICE and THIRD-PARTY.md.
+engine is hasis's own, first written for hasis's OP-XY Cherd machine.
+See NOTICE and THIRD-PARTY.md.
